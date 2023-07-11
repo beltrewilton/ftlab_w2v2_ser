@@ -13,4 +13,4 @@ git -C wav2vec2-base-es-voxpopuli-v2 lfs pull
 #rm -rf wav2vec2-base-es-voxpopuli-v2/.git/
 #rm -f  wav2vec2-base-es-voxpopuli-v2/.gitattributes
 
-echo "Fin."
+echo "Fin de la descarga."
