@@ -1,0 +1,5 @@
+.idea/
+/pretrained_path/wav*
+/rawdata/
+/downstream/
+/lightning_logs/

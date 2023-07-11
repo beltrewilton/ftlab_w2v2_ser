@@ -1,0 +1,2355 @@
+digraph {
+	graph [size="322.65,322.65"]
+	node [align=left fontname=monospace fontsize=10 height=0.2 ranksep=0.1 shape=box style=filled]
+	5215292768 [label="
+ (1, 4)" fillcolor=darkolivegreen1]
+	5201990304 [label=AddmmBackward0]
+	5201990736 -> 5201990304
+	5215293328 [label="model.linear_head.1.bias
+ (4)" fillcolor=lightblue]
+	5215293328 -> 5201990736
+	5201990736 [label=AccumulateGrad]
+	5201990688 -> 5201990304
+	5201990688 [label=ReluBackward0]
+	5201990448 -> 5201990688
+	5201990448 [label=DivBackward0]
+	5201991168 -> 5201990448
+	5201991168 [label=SumBackward1]
+	5201991360 -> 5201991168
+	5201991360 [label=MulBackward0]
+	5201991456 -> 5201991360
+	5201991456 [label=PermuteBackward0]
+	5201991648 -> 5201991456
+	5201991648 [label=ReluBackward0]
+	5201991840 -> 5201991648
+	5201991840 [label=NativeLayerNormBackward0]
+	5201992032 -> 5201991840
+	5201992032 [label=AddBackward0]
+	5201992320 -> 5201992032
+	5201992320 [label=NativeLayerNormBackward0]
+	5201992272 -> 5201992320
+	5201992272 [label=AddBackward0]
+	5201992704 -> 5201992272
+	5201992704 [label=NativeLayerNormBackward0]
+	5201993088 -> 5201992704
+	5201993088 [label=AddBackward0]
+	5201993376 -> 5201993088
+	5201993376 [label=NativeLayerNormBackward0]
+	5201993472 -> 5201993376
+	5201993472 [label=AddBackward0]
+	5201993760 -> 5201993472
+	5201993760 [label=NativeLayerNormBackward0]
+	5201994432 -> 5201993760
+	5201994432 [label=AddBackward0]
+	5201998800 -> 5201994432
+	5201998800 [label=NativeLayerNormBackward0]
+	5201998944 -> 5201998800
+	5201998944 [label=AddBackward0]
+	5201994816 -> 5201998944
+	5201994816 [label=NativeLayerNormBackward0]
+	5201995968 -> 5201994816
+	5201995968 [label=AddBackward0]
+	5201994720 -> 5201995968
+	5201994720 [label=NativeLayerNormBackward0]
+	5201996976 -> 5201994720
+	5201996976 [label=AddBackward0]
+	5201996640 -> 5201996976
+	5201996640 [label=NativeLayerNormBackward0]
+	5201999664 -> 5201996640
+	5201999664 [label=AddBackward0]
+	5201450544 -> 5201999664
+	5201450544 [label=NativeLayerNormBackward0]
+	5201450976 -> 5201450544
+	5201450976 [label=AddBackward0]
+	5201452176 -> 5201450976
+	5201452176 [label=NativeLayerNormBackward0]
+	5201452272 -> 5201452176
+	5201452272 [label=AddBackward0]
+	5201453136 -> 5201452272
+	5201453136 [label=NativeLayerNormBackward0]
+	5201453760 -> 5201453136
+	5201453760 [label=AddBackward0]
+	5201454000 -> 5201453760
+	5201454000 [label=NativeLayerNormBackward0]
+	5201454144 -> 5201454000
+	5201454144 [label=AddBackward0]
+	5201454768 -> 5201454144
+	5201454768 [label=NativeLayerNormBackward0]
+	5201455632 -> 5201454768
+	5201455632 [label=AddBackward0]
+	5201456448 -> 5201455632
+	5201456448 [label=NativeLayerNormBackward0]
+	5201456544 -> 5201456448
+	5201456544 [label=AddBackward0]
+	5201457648 -> 5201456544
+	5201457648 [label=NativeLayerNormBackward0]
+	5201459184 -> 5201457648
+	5201459184 [label=AddBackward0]
+	5201460240 -> 5201459184
+	5201460240 [label=NativeLayerNormBackward0]
+	5201460336 -> 5201460240
+	5201460336 [label=AddBackward0]
+	5201449824 -> 5201460336
+	5201449824 [label=NativeLayerNormBackward0]
+	5201449344 -> 5201449824
+	5201449344 [label=AddBackward0]
+	5201449008 -> 5201449344
+	5201449008 [label=NativeLayerNormBackward0]
+	5201450640 -> 5201449008
+	5201450640 [label=AddBackward0]
+	5214603824 -> 5201450640
+	5214603824 [label=NativeLayerNormBackward0]
+	5214603584 -> 5214603824
+	5214603584 [label=AddBackward0]
+	5214603392 -> 5214603584
+	5214603392 [label=NativeLayerNormBackward0]
+	5214603344 -> 5214603392
+	5214603344 [label=AddBackward0]
+	5214603152 -> 5214603344
+	5214603152 [label=NativeLayerNormBackward0]
+	5214602912 -> 5214603152
+	5214602912 [label=AddBackward0]
+	5214602720 -> 5214602912
+	5214602720 [label=NativeLayerNormBackward0]
+	5214602672 -> 5214602720
+	5214602672 [label=AddBackward0]
+	5214602480 -> 5214602672
+	5214602480 [label=NativeLayerNormBackward0]
+	5214602240 -> 5214602480
+	5214602240 [label=AddBackward0]
+	5214602048 -> 5214602240
+	5214602048 [label=NativeLayerNormBackward0]
+	5214602000 -> 5214602048
+	5214602000 [label=AddBackward0]
+	5214601808 -> 5214602000
+	5214601808 [label=TransposeBackward0]
+	5214601712 -> 5214601808
+	5214601712 [label=GeluBackward0]
+	5214601616 -> 5214601712
+	5214601616 [label=SliceBackward0]
+	5214601520 -> 5214601616
+	5214601520 [label=SliceBackward0]
+	5214601472 -> 5214601520
+	5214601472 [label=SliceBackward0]
+	5214604064 -> 5214601472
+	5214604064 [label=ConvolutionBackward0]
+	5214604160 -> 5214604064
+	5214604160 [label=WeightNormInterfaceBackward0]
+	5214604304 -> 5214604160
+	5201890416 [label="model.wav2vec2.wav2vec2.encoder.pos_conv_embed.conv.weight_v
+ (768, 48, 128)" fillcolor=lightblue]
+	5201890416 -> 5214604304
+	5214604304 [label=AccumulateGrad]
+	5214604256 -> 5214604160
+	5202033008 [label="model.wav2vec2.wav2vec2.encoder.pos_conv_embed.conv.weight_g
+ (1, 1, 128)" fillcolor=lightblue]
+	5202033008 -> 5214604256
+	5214604256 [label=AccumulateGrad]
+	5214604112 -> 5214604064
+	5111964320 [label="model.wav2vec2.wav2vec2.encoder.pos_conv_embed.conv.bias
+ (768)" fillcolor=lightblue]
+	5111964320 -> 5214604112
+	5214604112 [label=AccumulateGrad]
+	5214601952 -> 5214602048
+	5202022528 [label="model.wav2vec2.wav2vec2.encoder.layer_norm.weight
+ (768)" fillcolor=lightblue]
+	5202022528 -> 5214601952
+	5214601952 [label=AccumulateGrad]
+	5214602096 -> 5214602048
+	5202022048 [label="model.wav2vec2.wav2vec2.encoder.layer_norm.bias
+ (768)" fillcolor=lightblue]
+	5202022048 -> 5214602096
+	5214602096 [label=AccumulateGrad]
+	5214602192 -> 5214602240
+	5214602192 [label=ViewBackward0]
+	5214601664 -> 5214602192
+	5214601664 [label=AddmmBackward0]
+	5214601424 -> 5214601664
+	5215456128 [label="model.wav2vec2.wav2vec2.encoder.layers.0.attention.out_proj.bias
+ (768)" fillcolor=lightblue]
+	5215456128 -> 5214601424
+	5214601424 [label=AccumulateGrad]
+	5214601568 -> 5214601664
+	5214601568 [label=ViewBackward0]
+	5214601280 -> 5214601568
+	5214601280 [label=UnsafeViewBackward0]
+	5214604208 -> 5214601280
+	5214604208 [label=CloneBackward0]
+	5214604496 -> 5214604208
+	5214604496 [label=TransposeBackward0]
+	5214604592 -> 5214604496
+	5214604592 [label=ViewBackward0]
+	5214604688 -> 5214604592
+	5214604688 [label=BmmBackward0]
+	5214604784 -> 5214604688
+	5214604784 [label=SoftmaxBackward0]
+	5214604928 -> 5214604784
+	5214604928 [label=ViewBackward0]
+	5214605024 -> 5214604928
+	5214605024 [label=AddBackward0]
+	5214605120 -> 5214605024
+	5214605120 [label=ViewBackward0]
+	5214605216 -> 5214605120
+	5214605216 [label=BmmBackward0]
+	5214605312 -> 5214605216
+	5214605312 [label=ViewBackward0]
+	5214605456 -> 5214605312
+	5214605456 [label=CloneBackward0]
+	5201989344 -> 5214605456
+	5201989344 [label=TransposeBackward0]
+	5201989248 -> 5201989344
+	5201989248 [label=ViewBackward0]
+	5214605600 -> 5201989248
+	5214605600 [label=MulBackward0]
+	5214605696 -> 5214605600
+	5214605696 [label=ViewBackward0]
+	5214605792 -> 5214605696
+	5214605792 [label=AddmmBackward0]
+	5214605888 -> 5214605792
+	5215455968 [label="model.wav2vec2.wav2vec2.encoder.layers.0.attention.q_proj.bias
+ (768)" fillcolor=lightblue]
+	5215455968 -> 5214605888
+	5214605888 [label=AccumulateGrad]
+	5214605840 -> 5214605792
+	5214605840 [label=ViewBackward0]
+	5214602048 -> 5214605840
+	5214605552 -> 5214605792
+	5214605552 [label=TBackward0]
+	5214606080 -> 5214605552
+	5215455888 [label="model.wav2vec2.wav2vec2.encoder.layers.0.attention.q_proj.weight
+ (768, 768)" fillcolor=lightblue]
+	5215455888 -> 5214606080
+	5214606080 [label=AccumulateGrad]
+	5214605264 -> 5214605216
+	5214605264 [label=TransposeBackward0]
+	5201989056 -> 5214605264
+	5201989056 [label=ReshapeAliasBackward0]
+	5214605648 -> 5201989056
+	5214605648 [label=CloneBackward0]
+	5214605936 -> 5214605648
+	5214605936 [label=TransposeBackward0]
+	5214606176 -> 5214605936
+	5214606176 [label=ViewBackward0]
+	5214605984 -> 5214606176
+	5214605984 [label=ViewBackward0]
+	5214606272 -> 5214605984
+	5214606272 [label=AddmmBackward0]
+	5214606368 -> 5214606272
+	5201894256 [label="model.wav2vec2.wav2vec2.encoder.layers.0.attention.k_proj.bias
+ (768)" fillcolor=lightblue]
+	5201894256 -> 5214606368
+	5214606368 [label=AccumulateGrad]
+	5214606320 -> 5214606272
+	5214606320 [label=ViewBackward0]
+	5214602048 -> 5214606320
+	5214605408 -> 5214606272
+	5214605408 [label=TBackward0]
+	5214606560 -> 5214605408
+	5201888976 [label="model.wav2vec2.wav2vec2.encoder.layers.0.attention.k_proj.weight
+ (768, 768)" fillcolor=lightblue]
+	5201888976 -> 5214606560
+	5214606560 [label=AccumulateGrad]
+	5214604736 -> 5214604688
+	5214604736 [label=ReshapeAliasBackward0]
+	5214605072 -> 5214604736
+	5214605072 [label=CloneBackward0]
+	5214604832 -> 5214605072
+	5214604832 [label=TransposeBackward0]
+	5214605360 -> 5214604832
+	5214605360 [label=ViewBackward0]
+	5214606032 -> 5214605360
+	5214606032 [label=ViewBackward0]
+	5214606224 -> 5214606032
+	5214606224 [label=AddmmBackward0]
+	5214606512 -> 5214606224
+	5215455808 [label="model.wav2vec2.wav2vec2.encoder.layers.0.attention.v_proj.bias
+ (768)" fillcolor=lightblue]
+	5215455808 -> 5214606512
+	5214606512 [label=AccumulateGrad]
+	5214606416 -> 5214606224
+	5214606416 [label=ViewBackward0]
+	5214602048 -> 5214606416
+	5214604880 -> 5214606224
+	5214604880 [label=TBackward0]
+	5214606704 -> 5214604880
+	5201895936 [label="model.wav2vec2.wav2vec2.encoder.layers.0.attention.v_proj.weight
+ (768, 768)" fillcolor=lightblue]
+	5201895936 -> 5214606704
+	5214606704 [label=AccumulateGrad]
+	5214601856 -> 5214601664
+	5214601856 [label=TBackward0]
+	5214604448 -> 5214601856
+	5215456048 [label="model.wav2vec2.wav2vec2.encoder.layers.0.attention.out_proj.weight
+ (768, 768)" fillcolor=lightblue]
+	5215456048 -> 5214604448
+	5214604448 [label=AccumulateGrad]
+	5214602384 -> 5214602480
+	5215456208 [label="model.wav2vec2.wav2vec2.encoder.layers.0.layer_norm.weight
+ (768)" fillcolor=lightblue]
+	5215456208 -> 5214602384
+	5214602384 [label=AccumulateGrad]
+	5214602336 -> 5214602480
+	5215456288 [label="model.wav2vec2.wav2vec2.encoder.layers.0.layer_norm.bias
+ (768)" fillcolor=lightblue]
+	5215456288 -> 5214602336
+	5214602336 [label=AccumulateGrad]
+	5214602432 -> 5214602672
+	5214602432 [label=ViewBackward0]
+	5214601760 -> 5214602432
+	5214601760 [label=AddmmBackward0]
+	5214604352 -> 5214601760
+	5215456608 [label="model.wav2vec2.wav2vec2.encoder.layers.0.feed_forward.output_dense.bias
+ (768)" fillcolor=lightblue]
+	5215456608 -> 5214604352
+	5214604352 [label=AccumulateGrad]
+	5214601328 -> 5214601760
+	5214601328 [label=ViewBackward0]
+	5214604544 -> 5214601328
+	5214604544 [label=GeluBackward0]
+	5214605168 -> 5214604544
+	5214605168 [label=ViewBackward0]
+	5214605744 -> 5214605168
+	5214605744 [label=AddmmBackward0]
+	5214606656 -> 5214605744
+	5215456448 [label="model.wav2vec2.wav2vec2.encoder.layers.0.feed_forward.intermediate_dense.bias
+ (3072)" fillcolor=lightblue]
+	5215456448 -> 5214606656
+	5214606656 [label=AccumulateGrad]
+	5214606128 -> 5214605744
+	5214606128 [label=ViewBackward0]
+	5214602480 -> 5214606128
+	5214604400 -> 5214605744
+	5214604400 [label=TBackward0]
+	5214606608 -> 5214604400
+	5215456368 [label="model.wav2vec2.wav2vec2.encoder.layers.0.feed_forward.intermediate_dense.weight
+ (3072, 768)" fillcolor=lightblue]
+	5215456368 -> 5214606608
+	5214606608 [label=AccumulateGrad]
+	5214602288 -> 5214601760
+	5214602288 [label=TBackward0]
+	5214605504 -> 5214602288
+	5215456528 [label="model.wav2vec2.wav2vec2.encoder.layers.0.feed_forward.output_dense.weight
+ (768, 3072)" fillcolor=lightblue]
+	5215456528 -> 5214605504
+	5214605504 [label=AccumulateGrad]
+	5214602624 -> 5214602720
+	5215456688 [label="model.wav2vec2.wav2vec2.encoder.layers.0.final_layer_norm.weight
+ (768)" fillcolor=lightblue]
+	5215456688 -> 5214602624
+	5214602624 [label=AccumulateGrad]
+	5214602768 -> 5214602720
+	5215456768 [label="model.wav2vec2.wav2vec2.encoder.layers.0.final_layer_norm.bias
+ (768)" fillcolor=lightblue]
+	5215456768 -> 5214602768
+	5214602768 [label=AccumulateGrad]
+	5214602864 -> 5214602912
+	5214602864 [label=ViewBackward0]
+	5214602144 -> 5214602864
+	5214602144 [label=AddmmBackward0]
+	5214604976 -> 5214602144
+	5215457408 [label="model.wav2vec2.wav2vec2.encoder.layers.1.attention.out_proj.bias
+ (768)" fillcolor=lightblue]
+	5215457408 -> 5214604976
+	5214604976 [label=AccumulateGrad]
+	5214604640 -> 5214602144
+	5214604640 [label=ViewBackward0]
+	5214606464 -> 5214604640
+	5214606464 [label=UnsafeViewBackward0]
+	5214606800 -> 5214606464
+	5214606800 [label=CloneBackward0]
+	5214606992 -> 5214606800
+	5214606992 [label=TransposeBackward0]
+	5214607088 -> 5214606992
+	5214607088 [label=ViewBackward0]
+	5214607184 -> 5214607088
+	5214607184 [label=BmmBackward0]
+	5214607280 -> 5214607184
+	5214607280 [label=SoftmaxBackward0]
+	5214607424 -> 5214607280
+	5214607424 [label=ViewBackward0]
+	5214607520 -> 5214607424
+	5214607520 [label=AddBackward0]
+	5214607616 -> 5214607520
+	5214607616 [label=ViewBackward0]
+	5214607712 -> 5214607616
+	5214607712 [label=BmmBackward0]
+	5214607808 -> 5214607712
+	5214607808 [label=ViewBackward0]
+	5214607952 -> 5214607808
+	5214607952 [label=CloneBackward0]
+	5214608048 -> 5214607952
+	5214608048 [label=TransposeBackward0]
+	5214608144 -> 5214608048
+	5214608144 [label=ViewBackward0]
+	5214608240 -> 5214608144
+	5214608240 [label=MulBackward0]
+	5214608336 -> 5214608240
+	5214608336 [label=ViewBackward0]
+	5214608432 -> 5214608336
+	5214608432 [label=AddmmBackward0]
+	5214608528 -> 5214608432
+	5215457248 [label="model.wav2vec2.wav2vec2.encoder.layers.1.attention.q_proj.bias
+ (768)" fillcolor=lightblue]
+	5215457248 -> 5214608528
+	5214608528 [label=AccumulateGrad]
+	5214608480 -> 5214608432
+	5214608480 [label=ViewBackward0]
+	5214602720 -> 5214608480
+	5214607856 -> 5214608432
+	5214607856 [label=TBackward0]
+	5214608720 -> 5214607856
+	5215457168 [label="model.wav2vec2.wav2vec2.encoder.layers.1.attention.q_proj.weight
+ (768, 768)" fillcolor=lightblue]
+	5215457168 -> 5214608720
+	5214608720 [label=AccumulateGrad]
+	5214607760 -> 5214607712
+	5214607760 [label=TransposeBackward0]
+	5214608096 -> 5214607760
+	5214608096 [label=ReshapeAliasBackward0]
+	5214608288 -> 5214608096
+	5214608288 [label=CloneBackward0]
+	5214608576 -> 5214608288
+	5214608576 [label=TransposeBackward0]
+	5214608816 -> 5214608576
+	5214608816 [label=ViewBackward0]
+	5214608624 -> 5214608816
+	5214608624 [label=ViewBackward0]
+	5214608912 -> 5214608624
+	5214608912 [label=AddmmBackward0]
+	5214609008 -> 5214608912
+	5215456928 [label="model.wav2vec2.wav2vec2.encoder.layers.1.attention.k_proj.bias
+ (768)" fillcolor=lightblue]
+	5215456928 -> 5214609008
+	5214609008 [label=AccumulateGrad]
+	5214608960 -> 5214608912
+	5214608960 [label=ViewBackward0]
+	5214602720 -> 5214608960
+	5214607904 -> 5214608912
+	5214607904 [label=TBackward0]
+	5214609200 -> 5214607904
+	5215456848 [label="model.wav2vec2.wav2vec2.encoder.layers.1.attention.k_proj.weight
+ (768, 768)" fillcolor=lightblue]
+	5215456848 -> 5214609200
+	5214609200 [label=AccumulateGrad]
+	5214607232 -> 5214607184
+	5214607232 [label=ReshapeAliasBackward0]
+	5214607568 -> 5214607232
+	5214607568 [label=CloneBackward0]
+	5214607328 -> 5214607568
+	5214607328 [label=TransposeBackward0]
+	5214608192 -> 5214607328
+	5214608192 [label=ViewBackward0]
+	5214608672 -> 5214608192
+	5214608672 [label=ViewBackward0]
+	5214608864 -> 5214608672
+	5214608864 [label=AddmmBackward0]
+	5214609152 -> 5214608864
+	5215457088 [label="model.wav2vec2.wav2vec2.encoder.layers.1.attention.v_proj.bias
+ (768)" fillcolor=lightblue]
+	5215457088 -> 5214609152
+	5214609152 [label=AccumulateGrad]
+	5214609056 -> 5214608864
+	5214609056 [label=ViewBackward0]
+	5214602720 -> 5214609056
+	5214607376 -> 5214608864
+	5214607376 [label=TBackward0]
+	5214609344 -> 5214607376
+	5215457008 [label="model.wav2vec2.wav2vec2.encoder.layers.1.attention.v_proj.weight
+ (768, 768)" fillcolor=lightblue]
+	5215457008 -> 5214609344
+	5214609344 [label=AccumulateGrad]
+	5214602528 -> 5214602144
+	5214602528 [label=TBackward0]
+	5214606944 -> 5214602528
+	5215457328 [label="model.wav2vec2.wav2vec2.encoder.layers.1.attention.out_proj.weight
+ (768, 768)" fillcolor=lightblue]
+	5215457328 -> 5214606944
+	5214606944 [label=AccumulateGrad]
+	5214603056 -> 5214603152
+	5215457488 [label="model.wav2vec2.wav2vec2.encoder.layers.1.layer_norm.weight
+ (768)" fillcolor=lightblue]
+	5215457488 -> 5214603056
+	5214603056 [label=AccumulateGrad]
+	5214603008 -> 5214603152
+	5215457568 [label="model.wav2vec2.wav2vec2.encoder.layers.1.layer_norm.bias
+ (768)" fillcolor=lightblue]
+	5215457568 -> 5214603008
+	5214603008 [label=AccumulateGrad]
+	5214603104 -> 5214603344
+	5214603104 [label=ViewBackward0]
+	5214602576 -> 5214603104
+	5214602576 [label=AddmmBackward0]
+	5214606848 -> 5214602576
+	5215457888 [label="model.wav2vec2.wav2vec2.encoder.layers.1.feed_forward.output_dense.bias
+ (768)" fillcolor=lightblue]
+	5215457888 -> 5214606848
+	5214606848 [label=AccumulateGrad]
+	5214606752 -> 5214602576
+	5214606752 [label=ViewBackward0]
+	5214607040 -> 5214606752
+	5214607040 [label=GeluBackward0]
+	5214607664 -> 5214607040
+	5214607664 [label=ViewBackward0]
+	5214608384 -> 5214607664
+	5214608384 [label=AddmmBackward0]
+	5214609296 -> 5214608384
+	5215457728 [label="model.wav2vec2.wav2vec2.encoder.layers.1.feed_forward.intermediate_dense.bias
+ (3072)" fillcolor=lightblue]
+	5215457728 -> 5214609296
+	5214609296 [label=AccumulateGrad]
+	5214608768 -> 5214608384
+	5214608768 [label=ViewBackward0]
+	5214603152 -> 5214608768
+	5214606896 -> 5214608384
+	5214606896 [label=TBackward0]
+	5214609248 -> 5214606896
+	5215457648 [label="model.wav2vec2.wav2vec2.encoder.layers.1.feed_forward.intermediate_dense.weight
+ (3072, 768)" fillcolor=lightblue]
+	5215457648 -> 5214609248
+	5214609248 [label=AccumulateGrad]
+	5214602960 -> 5214602576
+	5214602960 [label=TBackward0]
+	5214608000 -> 5214602960
+	5215457808 [label="model.wav2vec2.wav2vec2.encoder.layers.1.feed_forward.output_dense.weight
+ (768, 3072)" fillcolor=lightblue]
+	5215457808 -> 5214608000
+	5214608000 [label=AccumulateGrad]
+	5214603296 -> 5214603392
+	5215457968 [label="model.wav2vec2.wav2vec2.encoder.layers.1.final_layer_norm.weight
+ (768)" fillcolor=lightblue]
+	5215457968 -> 5214603296
+	5214603296 [label=AccumulateGrad]
+	5214603440 -> 5214603392
+	5215458048 [label="model.wav2vec2.wav2vec2.encoder.layers.1.final_layer_norm.bias
+ (768)" fillcolor=lightblue]
+	5215458048 -> 5214603440
+	5214603440 [label=AccumulateGrad]
+	5214603536 -> 5214603584
+	5214603536 [label=ViewBackward0]
+	5214602816 -> 5214603536
+	5214602816 [label=AddmmBackward0]
+	5214607472 -> 5214602816
+	5215458688 [label="model.wav2vec2.wav2vec2.encoder.layers.2.attention.out_proj.bias
+ (768)" fillcolor=lightblue]
+	5215458688 -> 5214607472
+	5214607472 [label=AccumulateGrad]
+	5214607136 -> 5214602816
+	5214607136 [label=ViewBackward0]
+	5214609392 -> 5214607136
+	5214609392 [label=UnsafeViewBackward0]
+	5214609584 -> 5214609392
+	5214609584 [label=CloneBackward0]
+	5214609680 -> 5214609584
+	5214609680 [label=TransposeBackward0]
+	5214609776 -> 5214609680
+	5214609776 [label=ViewBackward0]
+	5214609872 -> 5214609776
+	5214609872 [label=BmmBackward0]
+	5214609968 -> 5214609872
+	5214609968 [label=SoftmaxBackward0]
+	5214610112 -> 5214609968
+	5214610112 [label=ViewBackward0]
+	5214610208 -> 5214610112
+	5214610208 [label=AddBackward0]
+	5214610304 -> 5214610208
+	5214610304 [label=ViewBackward0]
+	5214610400 -> 5214610304
+	5214610400 [label=BmmBackward0]
+	5214610496 -> 5214610400
+	5214610496 [label=ViewBackward0]
+	5214610640 -> 5214610496
+	5214610640 [label=CloneBackward0]
+	5214610736 -> 5214610640
+	5214610736 [label=TransposeBackward0]
+	5214610832 -> 5214610736
+	5214610832 [label=ViewBackward0]
+	5214610928 -> 5214610832
+	5214610928 [label=MulBackward0]
+	5214611024 -> 5214610928
+	5214611024 [label=ViewBackward0]
+	5214611120 -> 5214611024
+	5214611120 [label=AddmmBackward0]
+	5214611216 -> 5214611120
+	5215458528 [label="model.wav2vec2.wav2vec2.encoder.layers.2.attention.q_proj.bias
+ (768)" fillcolor=lightblue]
+	5215458528 -> 5214611216
+	5214611216 [label=AccumulateGrad]
+	5214611168 -> 5214611120
+	5214611168 [label=ViewBackward0]
+	5214603392 -> 5214611168
+	5214610544 -> 5214611120
+	5214610544 [label=TBackward0]
+	5214611408 -> 5214610544
+	5215458448 [label="model.wav2vec2.wav2vec2.encoder.layers.2.attention.q_proj.weight
+ (768, 768)" fillcolor=lightblue]
+	5215458448 -> 5214611408
+	5214611408 [label=AccumulateGrad]
+	5214610448 -> 5214610400
+	5214610448 [label=TransposeBackward0]
+	5214610784 -> 5214610448
+	5214610784 [label=ReshapeAliasBackward0]
+	5214610976 -> 5214610784
+	5214610976 [label=CloneBackward0]
+	5214611264 -> 5214610976
+	5214611264 [label=TransposeBackward0]
+	5214611504 -> 5214611264
+	5214611504 [label=ViewBackward0]
+	5214611312 -> 5214611504
+	5214611312 [label=ViewBackward0]
+	5214611600 -> 5214611312
+	5214611600 [label=AddmmBackward0]
+	5214611696 -> 5214611600
+	5215458208 [label="model.wav2vec2.wav2vec2.encoder.layers.2.attention.k_proj.bias
+ (768)" fillcolor=lightblue]
+	5215458208 -> 5214611696
+	5214611696 [label=AccumulateGrad]
+	5214611648 -> 5214611600
+	5214611648 [label=ViewBackward0]
+	5214603392 -> 5214611648
+	5214610592 -> 5214611600
+	5214610592 [label=TBackward0]
+	5214611888 -> 5214610592
+	5215458128 [label="model.wav2vec2.wav2vec2.encoder.layers.2.attention.k_proj.weight
+ (768, 768)" fillcolor=lightblue]
+	5215458128 -> 5214611888
+	5214611888 [label=AccumulateGrad]
+	5214609920 -> 5214609872
+	5214609920 [label=ReshapeAliasBackward0]
+	5214610256 -> 5214609920
+	5214610256 [label=CloneBackward0]
+	5214610016 -> 5214610256
+	5214610016 [label=TransposeBackward0]
+	5214610880 -> 5214610016
+	5214610880 [label=ViewBackward0]
+	5214611360 -> 5214610880
+	5214611360 [label=ViewBackward0]
+	5214611552 -> 5214611360
+	5214611552 [label=AddmmBackward0]
+	5214611840 -> 5214611552
+	5215458368 [label="model.wav2vec2.wav2vec2.encoder.layers.2.attention.v_proj.bias
+ (768)" fillcolor=lightblue]
+	5215458368 -> 5214611840
+	5214611840 [label=AccumulateGrad]
+	5214611744 -> 5214611552
+	5214611744 [label=ViewBackward0]
+	5214603392 -> 5214611744
+	5214610064 -> 5214611552
+	5214610064 [label=TBackward0]
+	5214612032 -> 5214610064
+	5215458288 [label="model.wav2vec2.wav2vec2.encoder.layers.2.attention.v_proj.weight
+ (768, 768)" fillcolor=lightblue]
+	5215458288 -> 5214612032
+	5214612032 [label=AccumulateGrad]
+	5214603200 -> 5214602816
+	5214603200 [label=TBackward0]
+	5214609632 -> 5214603200
+	5215458608 [label="model.wav2vec2.wav2vec2.encoder.layers.2.attention.out_proj.weight
+ (768, 768)" fillcolor=lightblue]
+	5215458608 -> 5214609632
+	5214609632 [label=AccumulateGrad]
+	5214603728 -> 5214603824
+	5215458768 [label="model.wav2vec2.wav2vec2.encoder.layers.2.layer_norm.weight
+ (768)" fillcolor=lightblue]
+	5215458768 -> 5214603728
+	5214603728 [label=AccumulateGrad]
+	5214603680 -> 5214603824
+	5215458848 [label="model.wav2vec2.wav2vec2.encoder.layers.2.layer_norm.bias
+ (768)" fillcolor=lightblue]
+	5215458848 -> 5214603680
+	5214603680 [label=AccumulateGrad]
+	5214603776 -> 5201450640
+	5214603776 [label=ViewBackward0]
+	5214603248 -> 5214603776
+	5214603248 [label=AddmmBackward0]
+	5214609440 -> 5214603248
+	5215459168 [label="model.wav2vec2.wav2vec2.encoder.layers.2.feed_forward.output_dense.bias
+ (768)" fillcolor=lightblue]
+	5215459168 -> 5214609440
+	5214609440 [label=AccumulateGrad]
+	5214609536 -> 5214603248
+	5214609536 [label=ViewBackward0]
+	5214609728 -> 5214609536
+	5214609728 [label=GeluBackward0]
+	5214610352 -> 5214609728
+	5214610352 [label=ViewBackward0]
+	5214611072 -> 5214610352
+	5214611072 [label=AddmmBackward0]
+	5214611984 -> 5214611072
+	5215459008 [label="model.wav2vec2.wav2vec2.encoder.layers.2.feed_forward.intermediate_dense.bias
+ (3072)" fillcolor=lightblue]
+	5215459008 -> 5214611984
+	5214611984 [label=AccumulateGrad]
+	5214611456 -> 5214611072
+	5214611456 [label=ViewBackward0]
+	5214603824 -> 5214611456
+	5214609488 -> 5214611072
+	5214609488 [label=TBackward0]
+	5214611936 -> 5214609488
+	5215458928 [label="model.wav2vec2.wav2vec2.encoder.layers.2.feed_forward.intermediate_dense.weight
+ (3072, 768)" fillcolor=lightblue]
+	5215458928 -> 5214611936
+	5214611936 [label=AccumulateGrad]
+	5214603632 -> 5214603248
+	5214603632 [label=TBackward0]
+	5214610688 -> 5214603632
+	5215459088 [label="model.wav2vec2.wav2vec2.encoder.layers.2.feed_forward.output_dense.weight
+ (768, 3072)" fillcolor=lightblue]
+	5215459088 -> 5214610688
+	5214610688 [label=AccumulateGrad]
+	5214604016 -> 5201449008
+	5215459248 [label="model.wav2vec2.wav2vec2.encoder.layers.2.final_layer_norm.weight
+ (768)" fillcolor=lightblue]
+	5215459248 -> 5214604016
+	5214604016 [label=AccumulateGrad]
+	5214603968 -> 5201449008
+	5215459328 [label="model.wav2vec2.wav2vec2.encoder.layers.2.final_layer_norm.bias
+ (768)" fillcolor=lightblue]
+	5215459328 -> 5214603968
+	5214603968 [label=AccumulateGrad]
+	5201449248 -> 5201449344
+	5201449248 [label=ViewBackward0]
+	5214603488 -> 5201449248
+	5214603488 [label=AddmmBackward0]
+	5214610160 -> 5214603488
+	5215459968 [label="model.wav2vec2.wav2vec2.encoder.layers.3.attention.out_proj.bias
+ (768)" fillcolor=lightblue]
+	5215459968 -> 5214610160
+	5214610160 [label=AccumulateGrad]
+	5214609824 -> 5214603488
+	5214609824 [label=ViewBackward0]
+	5214611792 -> 5214609824
+	5214611792 [label=UnsafeViewBackward0]
+	5214612128 -> 5214611792
+	5214612128 [label=CloneBackward0]
+	5214612320 -> 5214612128
+	5214612320 [label=TransposeBackward0]
+	5214612416 -> 5214612320
+	5214612416 [label=ViewBackward0]
+	5214612512 -> 5214612416
+	5214612512 [label=BmmBackward0]
+	5214612608 -> 5214612512
+	5214612608 [label=SoftmaxBackward0]
+	5214612752 -> 5214612608
+	5214612752 [label=ViewBackward0]
+	5214612848 -> 5214612752
+	5214612848 [label=AddBackward0]
+	5214612944 -> 5214612848
+	5214612944 [label=ViewBackward0]
+	5214613040 -> 5214612944
+	5214613040 [label=BmmBackward0]
+	5214613136 -> 5214613040
+	5214613136 [label=ViewBackward0]
+	5214613280 -> 5214613136
+	5214613280 [label=CloneBackward0]
+	5214613376 -> 5214613280
+	5214613376 [label=TransposeBackward0]
+	5214613472 -> 5214613376
+	5214613472 [label=ViewBackward0]
+	5214613568 -> 5214613472
+	5214613568 [label=MulBackward0]
+	5214613664 -> 5214613568
+	5214613664 [label=ViewBackward0]
+	5214613760 -> 5214613664
+	5214613760 [label=AddmmBackward0]
+	5214613856 -> 5214613760
+	5215459808 [label="model.wav2vec2.wav2vec2.encoder.layers.3.attention.q_proj.bias
+ (768)" fillcolor=lightblue]
+	5215459808 -> 5214613856
+	5214613856 [label=AccumulateGrad]
+	5214613808 -> 5214613760
+	5214613808 [label=ViewBackward0]
+	5201449008 -> 5214613808
+	5214613184 -> 5214613760
+	5214613184 [label=TBackward0]
+	5214614048 -> 5214613184
+	5215459728 [label="model.wav2vec2.wav2vec2.encoder.layers.3.attention.q_proj.weight
+ (768, 768)" fillcolor=lightblue]
+	5215459728 -> 5214614048
+	5214614048 [label=AccumulateGrad]
+	5214613088 -> 5214613040
+	5214613088 [label=TransposeBackward0]
+	5214613424 -> 5214613088
+	5214613424 [label=ReshapeAliasBackward0]
+	5214613616 -> 5214613424
+	5214613616 [label=CloneBackward0]
+	5214613904 -> 5214613616
+	5214613904 [label=TransposeBackward0]
+	5214614144 -> 5214613904
+	5214614144 [label=ViewBackward0]
+	5214613952 -> 5214614144
+	5214613952 [label=ViewBackward0]
+	5214614240 -> 5214613952
+	5214614240 [label=AddmmBackward0]
+	5214614336 -> 5214614240
+	5215459488 [label="model.wav2vec2.wav2vec2.encoder.layers.3.attention.k_proj.bias
+ (768)" fillcolor=lightblue]
+	5215459488 -> 5214614336
+	5214614336 [label=AccumulateGrad]
+	5214614288 -> 5214614240
+	5214614288 [label=ViewBackward0]
+	5201449008 -> 5214614288
+	5214613232 -> 5214614240
+	5214613232 [label=TBackward0]
+	5214614528 -> 5214613232
+	5215459408 [label="model.wav2vec2.wav2vec2.encoder.layers.3.attention.k_proj.weight
+ (768, 768)" fillcolor=lightblue]
+	5215459408 -> 5214614528
+	5214614528 [label=AccumulateGrad]
+	5214612560 -> 5214612512
+	5214612560 [label=ReshapeAliasBackward0]
+	5214612896 -> 5214612560
+	5214612896 [label=CloneBackward0]
+	5214612656 -> 5214612896
+	5214612656 [label=TransposeBackward0]
+	5214613520 -> 5214612656
+	5214613520 [label=ViewBackward0]
+	5214614000 -> 5214613520
+	5214614000 [label=ViewBackward0]
+	5214614192 -> 5214614000
+	5214614192 [label=AddmmBackward0]
+	5214614480 -> 5214614192
+	5215459648 [label="model.wav2vec2.wav2vec2.encoder.layers.3.attention.v_proj.bias
+ (768)" fillcolor=lightblue]
+	5215459648 -> 5214614480
+	5214614480 [label=AccumulateGrad]
+	5214614384 -> 5214614192
+	5214614384 [label=ViewBackward0]
+	5201449008 -> 5214614384
+	5214612704 -> 5214614192
+	5214612704 [label=TBackward0]
+	5214614672 -> 5214612704
+	5215459568 [label="model.wav2vec2.wav2vec2.encoder.layers.3.attention.v_proj.weight
+ (768, 768)" fillcolor=lightblue]
+	5215459568 -> 5214614672
+	5214614672 [label=AccumulateGrad]
+	5214603872 -> 5214603488
+	5214603872 [label=TBackward0]
+	5214612272 -> 5214603872
+	5215459888 [label="model.wav2vec2.wav2vec2.encoder.layers.3.attention.out_proj.weight
+ (768, 768)" fillcolor=lightblue]
+	5215459888 -> 5214612272
+	5214612272 [label=AccumulateGrad]
+	5201449776 -> 5201449824
+	5215460048 [label="model.wav2vec2.wav2vec2.encoder.layers.3.layer_norm.weight
+ (768)" fillcolor=lightblue]
+	5215460048 -> 5201449776
+	5201449776 [label=AccumulateGrad]
+	5201448864 -> 5201449824
+	5215460128 [label="model.wav2vec2.wav2vec2.encoder.layers.3.layer_norm.bias
+ (768)" fillcolor=lightblue]
+	5215460128 -> 5201448864
+	5201448864 [label=AccumulateGrad]
+	5201449728 -> 5201460336
+	5201449728 [label=ViewBackward0]
+	5201449200 -> 5201449728
+	5201449200 [label=AddmmBackward0]
+	5214612176 -> 5201449200
+	5215460448 [label="model.wav2vec2.wav2vec2.encoder.layers.3.feed_forward.output_dense.bias
+ (768)" fillcolor=lightblue]
+	5215460448 -> 5214612176
+	5214612176 [label=AccumulateGrad]
+	5214612080 -> 5201449200
+	5214612080 [label=ViewBackward0]
+	5214612368 -> 5214612080
+	5214612368 [label=GeluBackward0]
+	5214612992 -> 5214612368
+	5214612992 [label=ViewBackward0]
+	5214613712 -> 5214612992
+	5214613712 [label=AddmmBackward0]
+	5214614624 -> 5214613712
+	5215460288 [label="model.wav2vec2.wav2vec2.encoder.layers.3.feed_forward.intermediate_dense.bias
+ (3072)" fillcolor=lightblue]
+	5215460288 -> 5214614624
+	5214614624 [label=AccumulateGrad]
+	5214614096 -> 5214613712
+	5214614096 [label=ViewBackward0]
+	5201449824 -> 5214614096
+	5214612224 -> 5214613712
+	5214612224 [label=TBackward0]
+	5214614576 -> 5214612224
+	5215460208 [label="model.wav2vec2.wav2vec2.encoder.layers.3.feed_forward.intermediate_dense.weight
+ (3072, 768)" fillcolor=lightblue]
+	5215460208 -> 5214614576
+	5214614576 [label=AccumulateGrad]
+	5214603920 -> 5201449200
+	5214603920 [label=TBackward0]
+	5214613328 -> 5214603920
+	5215460368 [label="model.wav2vec2.wav2vec2.encoder.layers.3.feed_forward.output_dense.weight
+ (768, 3072)" fillcolor=lightblue]
+	5215460368 -> 5214613328
+	5214613328 [label=AccumulateGrad]
+	5201460720 -> 5201460240
+	5215460528 [label="model.wav2vec2.wav2vec2.encoder.layers.3.final_layer_norm.weight
+ (768)" fillcolor=lightblue]
+	5215460528 -> 5201460720
+	5201460720 [label=AccumulateGrad]
+	5201459760 -> 5201460240
+	5215460608 [label="model.wav2vec2.wav2vec2.encoder.layers.3.final_layer_norm.bias
+ (768)" fillcolor=lightblue]
+	5215460608 -> 5201459760
+	5201459760 [label=AccumulateGrad]
+	5201459280 -> 5201459184
+	5201459280 [label=ViewBackward0]
+	5201448960 -> 5201459280
+	5201448960 [label=AddmmBackward0]
+	5201449680 -> 5201448960
+	5215461248 [label="model.wav2vec2.wav2vec2.encoder.layers.4.attention.out_proj.bias
+ (768)" fillcolor=lightblue]
+	5215461248 -> 5201449680
+	5201449680 [label=AccumulateGrad]
+	5214612800 -> 5201448960
+	5214612800 [label=ViewBackward0]
+	5214614432 -> 5214612800
+	5214614432 [label=UnsafeViewBackward0]
+	5214614768 -> 5214614432
+	5214614768 [label=CloneBackward0]
+	5214614960 -> 5214614768
+	5214614960 [label=TransposeBackward0]
+	5214615056 -> 5214614960
+	5214615056 [label=ViewBackward0]
+	5214615152 -> 5214615056
+	5214615152 [label=BmmBackward0]
+	5214615248 -> 5214615152
+	5214615248 [label=SoftmaxBackward0]
+	5214615392 -> 5214615248
+	5214615392 [label=ViewBackward0]
+	5214615488 -> 5214615392
+	5214615488 [label=AddBackward0]
+	5214615584 -> 5214615488
+	5214615584 [label=ViewBackward0]
+	5214615680 -> 5214615584
+	5214615680 [label=BmmBackward0]
+	5214615776 -> 5214615680
+	5214615776 [label=ViewBackward0]
+	5214615920 -> 5214615776
+	5214615920 [label=CloneBackward0]
+	5214616016 -> 5214615920
+	5214616016 [label=TransposeBackward0]
+	5214616112 -> 5214616016
+	5214616112 [label=ViewBackward0]
+	5214616208 -> 5214616112
+	5214616208 [label=MulBackward0]
+	5214616304 -> 5214616208
+	5214616304 [label=ViewBackward0]
+	5214616400 -> 5214616304
+	5214616400 [label=AddmmBackward0]
+	5214616496 -> 5214616400
+	5215461088 [label="model.wav2vec2.wav2vec2.encoder.layers.4.attention.q_proj.bias
+ (768)" fillcolor=lightblue]
+	5215461088 -> 5214616496
+	5214616496 [label=AccumulateGrad]
+	5214616448 -> 5214616400
+	5214616448 [label=ViewBackward0]
+	5201460240 -> 5214616448
+	5214615824 -> 5214616400
+	5214615824 [label=TBackward0]
+	5214616688 -> 5214615824
+	5215461008 [label="model.wav2vec2.wav2vec2.encoder.layers.4.attention.q_proj.weight
+ (768, 768)" fillcolor=lightblue]
+	5215461008 -> 5214616688
+	5214616688 [label=AccumulateGrad]
+	5214615728 -> 5214615680
+	5214615728 [label=TransposeBackward0]
+	5214616064 -> 5214615728
+	5214616064 [label=ReshapeAliasBackward0]
+	5214616256 -> 5214616064
+	5214616256 [label=CloneBackward0]
+	5214616544 -> 5214616256
+	5214616544 [label=TransposeBackward0]
+	5214616784 -> 5214616544
+	5214616784 [label=ViewBackward0]
+	5214616592 -> 5214616784
+	5214616592 [label=ViewBackward0]
+	5214616880 -> 5214616592
+	5214616880 [label=AddmmBackward0]
+	5214616976 -> 5214616880
+	5215460768 [label="model.wav2vec2.wav2vec2.encoder.layers.4.attention.k_proj.bias
+ (768)" fillcolor=lightblue]
+	5215460768 -> 5214616976
+	5214616976 [label=AccumulateGrad]
+	5214616928 -> 5214616880
+	5214616928 [label=ViewBackward0]
+	5201460240 -> 5214616928
+	5214615872 -> 5214616880
+	5214615872 [label=TBackward0]
+	5214617168 -> 5214615872
+	5215460688 [label="model.wav2vec2.wav2vec2.encoder.layers.4.attention.k_proj.weight
+ (768, 768)" fillcolor=lightblue]
+	5215460688 -> 5214617168
+	5214617168 [label=AccumulateGrad]
+	5214615200 -> 5214615152
+	5214615200 [label=ReshapeAliasBackward0]
+	5214615536 -> 5214615200
+	5214615536 [label=CloneBackward0]
+	5214615296 -> 5214615536
+	5214615296 [label=TransposeBackward0]
+	5214616160 -> 5214615296
+	5214616160 [label=ViewBackward0]
+	5214616640 -> 5214616160
+	5214616640 [label=ViewBackward0]
+	5214616832 -> 5214616640
+	5214616832 [label=AddmmBackward0]
+	5214617120 -> 5214616832
+	5215460928 [label="model.wav2vec2.wav2vec2.encoder.layers.4.attention.v_proj.bias
+ (768)" fillcolor=lightblue]
+	5215460928 -> 5214617120
+	5214617120 [label=AccumulateGrad]
+	5214617024 -> 5214616832
+	5214617024 [label=ViewBackward0]
+	5201460240 -> 5214617024
+	5214615344 -> 5214616832
+	5214615344 [label=TBackward0]
+	5214617312 -> 5214615344
+	5215460848 [label="model.wav2vec2.wav2vec2.encoder.layers.4.attention.v_proj.weight
+ (768, 768)" fillcolor=lightblue]
+	5215460848 -> 5214617312
+	5214617312 [label=AccumulateGrad]
+	5214612464 -> 5201448960
+	5214612464 [label=TBackward0]
+	5214614912 -> 5214612464
+	5215461168 [label="model.wav2vec2.wav2vec2.encoder.layers.4.attention.out_proj.weight
+ (768, 768)" fillcolor=lightblue]
+	5215461168 -> 5214614912
+	5214614912 [label=AccumulateGrad]
+	5201458224 -> 5201457648
+	5215461328 [label="model.wav2vec2.wav2vec2.encoder.layers.4.layer_norm.weight
+ (768)" fillcolor=lightblue]
+	5215461328 -> 5201458224
+	5201458224 [label=AccumulateGrad]
+	5201458608 -> 5201457648
+	5215461408 [label="model.wav2vec2.wav2vec2.encoder.layers.4.layer_norm.bias
+ (768)" fillcolor=lightblue]
+	5215461408 -> 5201458608
+	5201458608 [label=AccumulateGrad]
+	5201458128 -> 5201456544
+	5201458128 [label=ViewBackward0]
+	5201460816 -> 5201458128
+	5201460816 [label=AddmmBackward0]
+	5201458704 -> 5201460816
+	5215461728 [label="model.wav2vec2.wav2vec2.encoder.layers.4.feed_forward.output_dense.bias
+ (768)" fillcolor=lightblue]
+	5215461728 -> 5201458704
+	5201458704 [label=AccumulateGrad]
+	5214614816 -> 5201460816
+	5214614816 [label=ViewBackward0]
+	5214615008 -> 5214614816
+	5214615008 [label=GeluBackward0]
+	5214615632 -> 5214615008
+	5214615632 [label=ViewBackward0]
+	5214616352 -> 5214615632
+	5214616352 [label=AddmmBackward0]
+	5214617264 -> 5214616352
+	5215461568 [label="model.wav2vec2.wav2vec2.encoder.layers.4.feed_forward.intermediate_dense.bias
+ (3072)" fillcolor=lightblue]
+	5215461568 -> 5214617264
+	5214617264 [label=AccumulateGrad]
+	5214616736 -> 5214616352
+	5214616736 [label=ViewBackward0]
+	5201457648 -> 5214616736
+	5214614864 -> 5214616352
+	5214614864 [label=TBackward0]
+	5214617216 -> 5214614864
+	5215461488 [label="model.wav2vec2.wav2vec2.encoder.layers.4.feed_forward.intermediate_dense.weight
+ (3072, 768)" fillcolor=lightblue]
+	5215461488 -> 5214617216
+	5214617216 [label=AccumulateGrad]
+	5214614720 -> 5201460816
+	5214614720 [label=TBackward0]
+	5214615968 -> 5214614720
+	5215461648 [label="model.wav2vec2.wav2vec2.encoder.layers.4.feed_forward.output_dense.weight
+ (768, 3072)" fillcolor=lightblue]
+	5215461648 -> 5214615968
+	5214615968 [label=AccumulateGrad]
+	5201456928 -> 5201456448
+	5215461808 [label="model.wav2vec2.wav2vec2.encoder.layers.4.final_layer_norm.weight
+ (768)" fillcolor=lightblue]
+	5215461808 -> 5201456928
+	5201456928 [label=AccumulateGrad]
+	5201456160 -> 5201456448
+	5215461888 [label="model.wav2vec2.wav2vec2.encoder.layers.4.final_layer_norm.bias
+ (768)" fillcolor=lightblue]
+	5215461888 -> 5201456160
+	5201456160 [label=AccumulateGrad]
+	5201455728 -> 5201455632
+	5201455728 [label=ViewBackward0]
+	5201459664 -> 5201455728
+	5201459664 [label=AddmmBackward0]
+	5201457552 -> 5201459664
+	5215462528 [label="model.wav2vec2.wav2vec2.encoder.layers.5.attention.out_proj.bias
+ (768)" fillcolor=lightblue]
+	5215462528 -> 5201457552
+	5201457552 [label=AccumulateGrad]
+	5214615440 -> 5201459664
+	5214615440 [label=ViewBackward0]
+	5214617072 -> 5214615440
+	5214617072 [label=UnsafeViewBackward0]
+	5214617408 -> 5214617072
+	5214617408 [label=CloneBackward0]
+	5214617552 -> 5214617408
+	5214617552 [label=TransposeBackward0]
+	5201936544 -> 5214617552
+	5201936544 [label=ViewBackward0]
+	5201936640 -> 5201936544
+	5201936640 [label=BmmBackward0]
+	5201936736 -> 5201936640
+	5201936736 [label=SoftmaxBackward0]
+	5201936880 -> 5201936736
+	5201936880 [label=ViewBackward0]
+	5201937024 -> 5201936880
+	5201937024 [label=AddBackward0]
+	5201937120 -> 5201937024
+	5201937120 [label=ViewBackward0]
+	5201937216 -> 5201937120
+	5201937216 [label=BmmBackward0]
+	5201937312 -> 5201937216
+	5201937312 [label=ViewBackward0]
+	5201937456 -> 5201937312
+	5201937456 [label=CloneBackward0]
+	5201937552 -> 5201937456
+	5201937552 [label=TransposeBackward0]
+	5201937648 -> 5201937552
+	5201937648 [label=ViewBackward0]
+	5201937744 -> 5201937648
+	5201937744 [label=MulBackward0]
+	5201937840 -> 5201937744
+	5201937840 [label=ViewBackward0]
+	5201937936 -> 5201937840
+	5201937936 [label=AddmmBackward0]
+	5201938032 -> 5201937936
+	5215462368 [label="model.wav2vec2.wav2vec2.encoder.layers.5.attention.q_proj.bias
+ (768)" fillcolor=lightblue]
+	5215462368 -> 5201938032
+	5201938032 [label=AccumulateGrad]
+	5201937984 -> 5201937936
+	5201937984 [label=ViewBackward0]
+	5201456448 -> 5201937984
+	5201937360 -> 5201937936
+	5201937360 [label=TBackward0]
+	5201938224 -> 5201937360
+	5215462288 [label="model.wav2vec2.wav2vec2.encoder.layers.5.attention.q_proj.weight
+ (768, 768)" fillcolor=lightblue]
+	5215462288 -> 5201938224
+	5201938224 [label=AccumulateGrad]
+	5201937264 -> 5201937216
+	5201937264 [label=TransposeBackward0]
+	5201937600 -> 5201937264
+	5201937600 [label=ReshapeAliasBackward0]
+	5201937792 -> 5201937600
+	5201937792 [label=CloneBackward0]
+	5201938080 -> 5201937792
+	5201938080 [label=TransposeBackward0]
+	5201938320 -> 5201938080
+	5201938320 [label=ViewBackward0]
+	5201938128 -> 5201938320
+	5201938128 [label=ViewBackward0]
+	5201938416 -> 5201938128
+	5201938416 [label=AddmmBackward0]
+	5201938512 -> 5201938416
+	5215462048 [label="model.wav2vec2.wav2vec2.encoder.layers.5.attention.k_proj.bias
+ (768)" fillcolor=lightblue]
+	5215462048 -> 5201938512
+	5201938512 [label=AccumulateGrad]
+	5201938464 -> 5201938416
+	5201938464 [label=ViewBackward0]
+	5201456448 -> 5201938464
+	5201937408 -> 5201938416
+	5201937408 [label=TBackward0]
+	5201938704 -> 5201937408
+	5215461968 [label="model.wav2vec2.wav2vec2.encoder.layers.5.attention.k_proj.weight
+ (768, 768)" fillcolor=lightblue]
+	5215461968 -> 5201938704
+	5201938704 [label=AccumulateGrad]
+	5201936688 -> 5201936640
+	5201936688 [label=ReshapeAliasBackward0]
+	5201937072 -> 5201936688
+	5201937072 [label=CloneBackward0]
+	5201936928 -> 5201937072
+	5201936928 [label=TransposeBackward0]
+	5201937696 -> 5201936928
+	5201937696 [label=ViewBackward0]
+	5201938176 -> 5201937696
+	5201938176 [label=ViewBackward0]
+	5201938368 -> 5201938176
+	5201938368 [label=AddmmBackward0]
+	5201938656 -> 5201938368
+	5215462208 [label="model.wav2vec2.wav2vec2.encoder.layers.5.attention.v_proj.bias
+ (768)" fillcolor=lightblue]
+	5215462208 -> 5201938656
+	5201938656 [label=AccumulateGrad]
+	5201938560 -> 5201938368
+	5201938560 [label=ViewBackward0]
+	5201456448 -> 5201938560
+	5201936832 -> 5201938368
+	5201936832 [label=TBackward0]
+	5201938848 -> 5201936832
+	5215462128 [label="model.wav2vec2.wav2vec2.encoder.layers.5.attention.v_proj.weight
+ (768, 768)" fillcolor=lightblue]
+	5215462128 -> 5201938848
+	5201938848 [label=AccumulateGrad]
+	5214615104 -> 5201459664
+	5214615104 [label=TBackward0]
+	5214617504 -> 5214615104
+	5215462448 [label="model.wav2vec2.wav2vec2.encoder.layers.5.attention.out_proj.weight
+ (768, 768)" fillcolor=lightblue]
+	5215462448 -> 5214617504
+	5214617504 [label=AccumulateGrad]
+	5201455104 -> 5201454768
+	5215462608 [label="model.wav2vec2.wav2vec2.encoder.layers.5.layer_norm.weight
+ (768)" fillcolor=lightblue]
+	5215462608 -> 5201455104
+	5201455104 [label=AccumulateGrad]
+	5201455296 -> 5201454768
+	5215462688 [label="model.wav2vec2.wav2vec2.encoder.layers.5.layer_norm.bias
+ (768)" fillcolor=lightblue]
+	5215462688 -> 5201455296
+	5201455296 [label=AccumulateGrad]
+	5201455008 -> 5201454144
+	5201455008 [label=ViewBackward0]
+	5201457024 -> 5201455008
+	5201457024 [label=AddmmBackward0]
+	5201455392 -> 5201457024
+	5215463008 [label="model.wav2vec2.wav2vec2.encoder.layers.5.feed_forward.output_dense.bias
+ (768)" fillcolor=lightblue]
+	5215463008 -> 5201455392
+	5201455392 [label=AccumulateGrad]
+	5214617456 -> 5201457024
+	5214617456 [label=ViewBackward0]
+	5201936592 -> 5214617456
+	5201936592 [label=GeluBackward0]
+	5201937168 -> 5201936592
+	5201937168 [label=ViewBackward0]
+	5201937888 -> 5201937168
+	5201937888 [label=AddmmBackward0]
+	5201938800 -> 5201937888
+	5215462848 [label="model.wav2vec2.wav2vec2.encoder.layers.5.feed_forward.intermediate_dense.bias
+ (3072)" fillcolor=lightblue]
+	5215462848 -> 5201938800
+	5201938800 [label=AccumulateGrad]
+	5201938272 -> 5201937888
+	5201938272 [label=ViewBackward0]
+	5201454768 -> 5201938272
+	5201936448 -> 5201937888
+	5201936448 [label=TBackward0]
+	5201938752 -> 5201936448
+	5215462768 [label="model.wav2vec2.wav2vec2.encoder.layers.5.feed_forward.intermediate_dense.weight
+ (3072, 768)" fillcolor=lightblue]
+	5215462768 -> 5201938752
+	5201938752 [label=AccumulateGrad]
+	5214617360 -> 5201457024
+	5214617360 [label=TBackward0]
+	5201937504 -> 5214617360
+	5215462928 [label="model.wav2vec2.wav2vec2.encoder.layers.5.feed_forward.output_dense.weight
+ (768, 3072)" fillcolor=lightblue]
+	5215462928 -> 5201937504
+	5201937504 [label=AccumulateGrad]
+	5201454384 -> 5201454000
+	5215463088 [label="model.wav2vec2.wav2vec2.encoder.layers.5.final_layer_norm.weight
+ (768)" fillcolor=lightblue]
+	5215463088 -> 5201454384
+	5201454384 [label=AccumulateGrad]
+	5201454048 -> 5201454000
+	5215463168 [label="model.wav2vec2.wav2vec2.encoder.layers.5.final_layer_norm.bias
+ (768)" fillcolor=lightblue]
+	5215463168 -> 5201454048
+	5201454048 [label=AccumulateGrad]
+	5201453856 -> 5201453760
+	5201453856 [label=ViewBackward0]
+	5201456064 -> 5201453856
+	5201456064 [label=AddmmBackward0]
+	5214609104 -> 5201456064
+	5215463808 [label="model.wav2vec2.wav2vec2.encoder.layers.6.attention.out_proj.bias
+ (768)" fillcolor=lightblue]
+	5215463808 -> 5214609104
+	5214609104 [label=AccumulateGrad]
+	5201454672 -> 5201456064
+	5201454672 [label=ViewBackward0]
+	5201938608 -> 5201454672
+	5201938608 [label=UnsafeViewBackward0]
+	5201938944 -> 5201938608
+	5201938944 [label=CloneBackward0]
+	5201939136 -> 5201938944
+	5201939136 [label=TransposeBackward0]
+	5201939232 -> 5201939136
+	5201939232 [label=ViewBackward0]
+	5201939328 -> 5201939232
+	5201939328 [label=BmmBackward0]
+	5201939424 -> 5201939328
+	5201939424 [label=SoftmaxBackward0]
+	5201939568 -> 5201939424
+	5201939568 [label=ViewBackward0]
+	5201939664 -> 5201939568
+	5201939664 [label=AddBackward0]
+	5201939760 -> 5201939664
+	5201939760 [label=ViewBackward0]
+	5201939856 -> 5201939760
+	5201939856 [label=BmmBackward0]
+	5201939952 -> 5201939856
+	5201939952 [label=ViewBackward0]
+	5201940096 -> 5201939952
+	5201940096 [label=CloneBackward0]
+	5201940192 -> 5201940096
+	5201940192 [label=TransposeBackward0]
+	5201940288 -> 5201940192
+	5201940288 [label=ViewBackward0]
+	5201940384 -> 5201940288
+	5201940384 [label=MulBackward0]
+	5201940480 -> 5201940384
+	5201940480 [label=ViewBackward0]
+	5201940576 -> 5201940480
+	5201940576 [label=AddmmBackward0]
+	5201940672 -> 5201940576
+	5215463648 [label="model.wav2vec2.wav2vec2.encoder.layers.6.attention.q_proj.bias
+ (768)" fillcolor=lightblue]
+	5215463648 -> 5201940672
+	5201940672 [label=AccumulateGrad]
+	5201940624 -> 5201940576
+	5201940624 [label=ViewBackward0]
+	5201454000 -> 5201940624
+	5201940000 -> 5201940576
+	5201940000 [label=TBackward0]
+	5201940864 -> 5201940000
+	5215463568 [label="model.wav2vec2.wav2vec2.encoder.layers.6.attention.q_proj.weight
+ (768, 768)" fillcolor=lightblue]
+	5215463568 -> 5201940864
+	5201940864 [label=AccumulateGrad]
+	5201939904 -> 5201939856
+	5201939904 [label=TransposeBackward0]
+	5201940240 -> 5201939904
+	5201940240 [label=ReshapeAliasBackward0]
+	5201940432 -> 5201940240
+	5201940432 [label=CloneBackward0]
+	5201940720 -> 5201940432
+	5201940720 [label=TransposeBackward0]
+	5201940960 -> 5201940720
+	5201940960 [label=ViewBackward0]
+	5201940768 -> 5201940960
+	5201940768 [label=ViewBackward0]
+	5201941056 -> 5201940768
+	5201941056 [label=AddmmBackward0]
+	5201941152 -> 5201941056
+	5215463328 [label="model.wav2vec2.wav2vec2.encoder.layers.6.attention.k_proj.bias
+ (768)" fillcolor=lightblue]
+	5215463328 -> 5201941152
+	5201941152 [label=AccumulateGrad]
+	5201941104 -> 5201941056
+	5201941104 [label=ViewBackward0]
+	5201454000 -> 5201941104
+	5201940048 -> 5201941056
+	5201940048 [label=TBackward0]
+	5201941344 -> 5201940048
+	5215463248 [label="model.wav2vec2.wav2vec2.encoder.layers.6.attention.k_proj.weight
+ (768, 768)" fillcolor=lightblue]
+	5215463248 -> 5201941344
+	5201941344 [label=AccumulateGrad]
+	5201939376 -> 5201939328
+	5201939376 [label=ReshapeAliasBackward0]
+	5201939712 -> 5201939376
+	5201939712 [label=CloneBackward0]
+	5201939472 -> 5201939712
+	5201939472 [label=TransposeBackward0]
+	5201940336 -> 5201939472
+	5201940336 [label=ViewBackward0]
+	5201940816 -> 5201940336
+	5201940816 [label=ViewBackward0]
+	5201941008 -> 5201940816
+	5201941008 [label=AddmmBackward0]
+	5201941296 -> 5201941008
+	5215463488 [label="model.wav2vec2.wav2vec2.encoder.layers.6.attention.v_proj.bias
+ (768)" fillcolor=lightblue]
+	5215463488 -> 5201941296
+	5201941296 [label=AccumulateGrad]
+	5201941200 -> 5201941008
+	5201941200 [label=ViewBackward0]
+	5201454000 -> 5201941200
+	5201939520 -> 5201941008
+	5201939520 [label=TBackward0]
+	5201941488 -> 5201939520
+	5215463408 [label="model.wav2vec2.wav2vec2.encoder.layers.6.attention.v_proj.weight
+ (768, 768)" fillcolor=lightblue]
+	5215463408 -> 5201941488
+	5201941488 [label=AccumulateGrad]
+	5201936976 -> 5201456064
+	5201936976 [label=TBackward0]
+	5201939088 -> 5201936976
+	5215463728 [label="model.wav2vec2.wav2vec2.encoder.layers.6.attention.out_proj.weight
+ (768, 768)" fillcolor=lightblue]
+	5215463728 -> 5201939088
+	5201939088 [label=AccumulateGrad]
+	5201453232 -> 5201453136
+	5215463888 [label="model.wav2vec2.wav2vec2.encoder.layers.6.layer_norm.weight
+ (768)" fillcolor=lightblue]
+	5215463888 -> 5201453232
+	5201453232 [label=AccumulateGrad]
+	5201453376 -> 5201453136
+	5215463968 [label="model.wav2vec2.wav2vec2.encoder.layers.6.layer_norm.bias
+ (768)" fillcolor=lightblue]
+	5215463968 -> 5201453376
+	5201453376 [label=AccumulateGrad]
+	5201453088 -> 5201452272
+	5201453088 [label=ViewBackward0]
+	5201454480 -> 5201453088
+	5201454480 [label=AddmmBackward0]
+	5201453472 -> 5201454480
+	5215464288 [label="model.wav2vec2.wav2vec2.encoder.layers.6.feed_forward.output_dense.bias
+ (768)" fillcolor=lightblue]
+	5215464288 -> 5201453472
+	5201453472 [label=AccumulateGrad]
+	5201938992 -> 5201454480
+	5201938992 [label=ViewBackward0]
+	5201939184 -> 5201938992
+	5201939184 [label=GeluBackward0]
+	5201939808 -> 5201939184
+	5201939808 [label=ViewBackward0]
+	5201940528 -> 5201939808
+	5201940528 [label=AddmmBackward0]
+	5201941440 -> 5201940528
+	5215464128 [label="model.wav2vec2.wav2vec2.encoder.layers.6.feed_forward.intermediate_dense.bias
+ (3072)" fillcolor=lightblue]
+	5215464128 -> 5201941440
+	5201941440 [label=AccumulateGrad]
+	5201940912 -> 5201940528
+	5201940912 [label=ViewBackward0]
+	5201453136 -> 5201940912
+	5201939040 -> 5201940528
+	5201939040 [label=TBackward0]
+	5201941392 -> 5201939040
+	5215464048 [label="model.wav2vec2.wav2vec2.encoder.layers.6.feed_forward.intermediate_dense.weight
+ (3072, 768)" fillcolor=lightblue]
+	5215464048 -> 5201941392
+	5201941392 [label=AccumulateGrad]
+	5201938896 -> 5201454480
+	5201938896 [label=TBackward0]
+	5201940144 -> 5201938896
+	5215464208 [label="model.wav2vec2.wav2vec2.encoder.layers.6.feed_forward.output_dense.weight
+ (768, 3072)" fillcolor=lightblue]
+	5215464208 -> 5201940144
+	5201940144 [label=AccumulateGrad]
+	5201452704 -> 5201452176
+	5215464368 [label="model.wav2vec2.wav2vec2.encoder.layers.6.final_layer_norm.weight
+ (768)" fillcolor=lightblue]
+	5215464368 -> 5201452704
+	5201452704 [label=AccumulateGrad]
+	5201451744 -> 5201452176
+	5215464448 [label="model.wav2vec2.wav2vec2.encoder.layers.6.final_layer_norm.bias
+ (768)" fillcolor=lightblue]
+	5215464448 -> 5201451744
+	5201451744 [label=AccumulateGrad]
+	5201451072 -> 5201450976
+	5201451072 [label=ViewBackward0]
+	5201453952 -> 5201451072
+	5201453952 [label=AddmmBackward0]
+	5201452992 -> 5201453952
+	5215465088 [label="model.wav2vec2.wav2vec2.encoder.layers.7.attention.out_proj.bias
+ (768)" fillcolor=lightblue]
+	5215465088 -> 5201452992
+	5201452992 [label=AccumulateGrad]
+	5201939616 -> 5201453952
+	5201939616 [label=ViewBackward0]
+	5201941248 -> 5201939616
+	5201941248 [label=UnsafeViewBackward0]
+	5201941584 -> 5201941248
+	5201941584 [label=CloneBackward0]
+	5201941776 -> 5201941584
+	5201941776 [label=TransposeBackward0]
+	5201941872 -> 5201941776
+	5201941872 [label=ViewBackward0]
+	5201941968 -> 5201941872
+	5201941968 [label=BmmBackward0]
+	5201942064 -> 5201941968
+	5201942064 [label=SoftmaxBackward0]
+	5201942208 -> 5201942064
+	5201942208 [label=ViewBackward0]
+	5201942304 -> 5201942208
+	5201942304 [label=AddBackward0]
+	5201942400 -> 5201942304
+	5201942400 [label=ViewBackward0]
+	5201942496 -> 5201942400
+	5201942496 [label=BmmBackward0]
+	5201942592 -> 5201942496
+	5201942592 [label=ViewBackward0]
+	5201942736 -> 5201942592
+	5201942736 [label=CloneBackward0]
+	5201942832 -> 5201942736
+	5201942832 [label=TransposeBackward0]
+	5201942928 -> 5201942832
+	5201942928 [label=ViewBackward0]
+	5201943024 -> 5201942928
+	5201943024 [label=MulBackward0]
+	5201943120 -> 5201943024
+	5201943120 [label=ViewBackward0]
+	5201943216 -> 5201943120
+	5201943216 [label=AddmmBackward0]
+	5201943312 -> 5201943216
+	5215464928 [label="model.wav2vec2.wav2vec2.encoder.layers.7.attention.q_proj.bias
+ (768)" fillcolor=lightblue]
+	5215464928 -> 5201943312
+	5201943312 [label=AccumulateGrad]
+	5201943264 -> 5201943216
+	5201943264 [label=ViewBackward0]
+	5201452176 -> 5201943264
+	5201942640 -> 5201943216
+	5201942640 [label=TBackward0]
+	5201943504 -> 5201942640
+	5215464848 [label="model.wav2vec2.wav2vec2.encoder.layers.7.attention.q_proj.weight
+ (768, 768)" fillcolor=lightblue]
+	5215464848 -> 5201943504
+	5201943504 [label=AccumulateGrad]
+	5201942544 -> 5201942496
+	5201942544 [label=TransposeBackward0]
+	5201942880 -> 5201942544
+	5201942880 [label=ReshapeAliasBackward0]
+	5201943072 -> 5201942880
+	5201943072 [label=CloneBackward0]
+	5201943360 -> 5201943072
+	5201943360 [label=TransposeBackward0]
+	5201943600 -> 5201943360
+	5201943600 [label=ViewBackward0]
+	5201943408 -> 5201943600
+	5201943408 [label=ViewBackward0]
+	5201943696 -> 5201943408
+	5201943696 [label=AddmmBackward0]
+	5201943792 -> 5201943696
+	5215464608 [label="model.wav2vec2.wav2vec2.encoder.layers.7.attention.k_proj.bias
+ (768)" fillcolor=lightblue]
+	5215464608 -> 5201943792
+	5201943792 [label=AccumulateGrad]
+	5201943744 -> 5201943696
+	5201943744 [label=ViewBackward0]
+	5201452176 -> 5201943744
+	5201942688 -> 5201943696
+	5201942688 [label=TBackward0]
+	5201943984 -> 5201942688
+	5215464528 [label="model.wav2vec2.wav2vec2.encoder.layers.7.attention.k_proj.weight
+ (768, 768)" fillcolor=lightblue]
+	5215464528 -> 5201943984
+	5201943984 [label=AccumulateGrad]
+	5201942016 -> 5201941968
+	5201942016 [label=ReshapeAliasBackward0]
+	5201942352 -> 5201942016
+	5201942352 [label=CloneBackward0]
+	5201942112 -> 5201942352
+	5201942112 [label=TransposeBackward0]
+	5201942976 -> 5201942112
+	5201942976 [label=ViewBackward0]
+	5201943456 -> 5201942976
+	5201943456 [label=ViewBackward0]
+	5201943648 -> 5201943456
+	5201943648 [label=AddmmBackward0]
+	5201943936 -> 5201943648
+	5215464768 [label="model.wav2vec2.wav2vec2.encoder.layers.7.attention.v_proj.bias
+ (768)" fillcolor=lightblue]
+	5215464768 -> 5201943936
+	5201943936 [label=AccumulateGrad]
+	5201943840 -> 5201943648
+	5201943840 [label=ViewBackward0]
+	5201452176 -> 5201943840
+	5201942160 -> 5201943648
+	5201942160 [label=TBackward0]
+	5201944128 -> 5201942160
+	5215464688 [label="model.wav2vec2.wav2vec2.encoder.layers.7.attention.v_proj.weight
+ (768, 768)" fillcolor=lightblue]
+	5215464688 -> 5201944128
+	5201944128 [label=AccumulateGrad]
+	5201939280 -> 5201453952
+	5201939280 [label=TBackward0]
+	5201941728 -> 5201939280
+	5215465008 [label="model.wav2vec2.wav2vec2.encoder.layers.7.attention.out_proj.weight
+ (768, 768)" fillcolor=lightblue]
+	5215465008 -> 5201941728
+	5201941728 [label=AccumulateGrad]
+	5201449968 -> 5201450544
+	5215465168 [label="model.wav2vec2.wav2vec2.encoder.layers.7.layer_norm.weight
+ (768)" fillcolor=lightblue]
+	5215465168 -> 5201449968
+	5201449968 [label=AccumulateGrad]
+	5201449920 -> 5201450544
+	5215465248 [label="model.wav2vec2.wav2vec2.encoder.layers.7.layer_norm.bias
+ (768)" fillcolor=lightblue]
+	5215465248 -> 5201449920
+	5201449920 [label=AccumulateGrad]
+	5201450016 -> 5201999664
+	5201450016 [label=ViewBackward0]
+	5201452800 -> 5201450016
+	5201452800 [label=AddmmBackward0]
+	5201449632 -> 5201452800
+	5215465568 [label="model.wav2vec2.wav2vec2.encoder.layers.7.feed_forward.output_dense.bias
+ (768)" fillcolor=lightblue]
+	5215465568 -> 5201449632
+	5201449632 [label=AccumulateGrad]
+	5201941632 -> 5201452800
+	5201941632 [label=ViewBackward0]
+	5201941824 -> 5201941632
+	5201941824 [label=GeluBackward0]
+	5201942448 -> 5201941824
+	5201942448 [label=ViewBackward0]
+	5201943168 -> 5201942448
+	5201943168 [label=AddmmBackward0]
+	5201944080 -> 5201943168
+	5215465408 [label="model.wav2vec2.wav2vec2.encoder.layers.7.feed_forward.intermediate_dense.bias
+ (3072)" fillcolor=lightblue]
+	5215465408 -> 5201944080
+	5201944080 [label=AccumulateGrad]
+	5201943552 -> 5201943168
+	5201943552 [label=ViewBackward0]
+	5201450544 -> 5201943552
+	5201941680 -> 5201943168
+	5201941680 [label=TBackward0]
+	5201944032 -> 5201941680
+	5215465328 [label="model.wav2vec2.wav2vec2.encoder.layers.7.feed_forward.intermediate_dense.weight
+ (3072, 768)" fillcolor=lightblue]
+	5215465328 -> 5201944032
+	5201944032 [label=AccumulateGrad]
+	5201941536 -> 5201452800
+	5201941536 [label=TBackward0]
+	5201942784 -> 5201941536
+	5215465488 [label="model.wav2vec2.wav2vec2.encoder.layers.7.feed_forward.output_dense.weight
+ (768, 3072)" fillcolor=lightblue]
+	5215465488 -> 5201942784
+	5201942784 [label=AccumulateGrad]
+	5201999136 -> 5201996640
+	5215465648 [label="model.wav2vec2.wav2vec2.encoder.layers.7.final_layer_norm.weight
+ (768)" fillcolor=lightblue]
+	5215465648 -> 5201999136
+	5201999136 [label=AccumulateGrad]
+	5201998368 -> 5201996640
+	5215465728 [label="model.wav2vec2.wav2vec2.encoder.layers.7.final_layer_norm.bias
+ (768)" fillcolor=lightblue]
+	5215465728 -> 5201998368
+	5201998368 [label=AccumulateGrad]
+	5201999808 -> 5201996976
+	5201999808 [label=ViewBackward0]
+	5201451648 -> 5201999808
+	5201451648 [label=AddmmBackward0]
+	5201449872 -> 5201451648
+	5215466368 [label="model.wav2vec2.wav2vec2.encoder.layers.8.attention.out_proj.bias
+ (768)" fillcolor=lightblue]
+	5215466368 -> 5201449872
+	5201449872 [label=AccumulateGrad]
+	5201942256 -> 5201451648
+	5201942256 [label=ViewBackward0]
+	5201943888 -> 5201942256
+	5201943888 [label=UnsafeViewBackward0]
+	5201944224 -> 5201943888
+	5201944224 [label=CloneBackward0]
+	5201944416 -> 5201944224
+	5201944416 [label=TransposeBackward0]
+	5201944512 -> 5201944416
+	5201944512 [label=ViewBackward0]
+	5201944608 -> 5201944512
+	5201944608 [label=BmmBackward0]
+	5201944704 -> 5201944608
+	5201944704 [label=SoftmaxBackward0]
+	5201944848 -> 5201944704
+	5201944848 [label=ViewBackward0]
+	5201944944 -> 5201944848
+	5201944944 [label=AddBackward0]
+	5201945040 -> 5201944944
+	5201945040 [label=ViewBackward0]
+	5201945136 -> 5201945040
+	5201945136 [label=BmmBackward0]
+	5201945232 -> 5201945136
+	5201945232 [label=ViewBackward0]
+	5201945376 -> 5201945232
+	5201945376 [label=CloneBackward0]
+	5201945472 -> 5201945376
+	5201945472 [label=TransposeBackward0]
+	5201945568 -> 5201945472
+	5201945568 [label=ViewBackward0]
+	5201945664 -> 5201945568
+	5201945664 [label=MulBackward0]
+	5201945760 -> 5201945664
+	5201945760 [label=ViewBackward0]
+	5201945856 -> 5201945760
+	5201945856 [label=AddmmBackward0]
+	5201945952 -> 5201945856
+	5215466208 [label="model.wav2vec2.wav2vec2.encoder.layers.8.attention.q_proj.bias
+ (768)" fillcolor=lightblue]
+	5215466208 -> 5201945952
+	5201945952 [label=AccumulateGrad]
+	5201945904 -> 5201945856
+	5201945904 [label=ViewBackward0]
+	5201996640 -> 5201945904
+	5201945280 -> 5201945856
+	5201945280 [label=TBackward0]
+	5201946144 -> 5201945280
+	5215466128 [label="model.wav2vec2.wav2vec2.encoder.layers.8.attention.q_proj.weight
+ (768, 768)" fillcolor=lightblue]
+	5215466128 -> 5201946144
+	5201946144 [label=AccumulateGrad]
+	5201945184 -> 5201945136
+	5201945184 [label=TransposeBackward0]
+	5201945520 -> 5201945184
+	5201945520 [label=ReshapeAliasBackward0]
+	5201945712 -> 5201945520
+	5201945712 [label=CloneBackward0]
+	5201946000 -> 5201945712
+	5201946000 [label=TransposeBackward0]
+	5201946240 -> 5201946000
+	5201946240 [label=ViewBackward0]
+	5201946048 -> 5201946240
+	5201946048 [label=ViewBackward0]
+	5201946336 -> 5201946048
+	5201946336 [label=AddmmBackward0]
+	5201946432 -> 5201946336
+	5215465888 [label="model.wav2vec2.wav2vec2.encoder.layers.8.attention.k_proj.bias
+ (768)" fillcolor=lightblue]
+	5215465888 -> 5201946432
+	5201946432 [label=AccumulateGrad]
+	5201946384 -> 5201946336
+	5201946384 [label=ViewBackward0]
+	5201996640 -> 5201946384
+	5201945328 -> 5201946336
+	5201945328 [label=TBackward0]
+	5201946624 -> 5201945328
+	5215465808 [label="model.wav2vec2.wav2vec2.encoder.layers.8.attention.k_proj.weight
+ (768, 768)" fillcolor=lightblue]
+	5215465808 -> 5201946624
+	5201946624 [label=AccumulateGrad]
+	5201944656 -> 5201944608
+	5201944656 [label=ReshapeAliasBackward0]
+	5201944992 -> 5201944656
+	5201944992 [label=CloneBackward0]
+	5201944752 -> 5201944992
+	5201944752 [label=TransposeBackward0]
+	5201945616 -> 5201944752
+	5201945616 [label=ViewBackward0]
+	5201946096 -> 5201945616
+	5201946096 [label=ViewBackward0]
+	5201946288 -> 5201946096
+	5201946288 [label=AddmmBackward0]
+	5201946576 -> 5201946288
+	5215466048 [label="model.wav2vec2.wav2vec2.encoder.layers.8.attention.v_proj.bias
+ (768)" fillcolor=lightblue]
+	5215466048 -> 5201946576
+	5201946576 [label=AccumulateGrad]
+	5201946480 -> 5201946288
+	5201946480 [label=ViewBackward0]
+	5201996640 -> 5201946480
+	5201944800 -> 5201946288
+	5201944800 [label=TBackward0]
+	5201946768 -> 5201944800
+	5215465968 [label="model.wav2vec2.wav2vec2.encoder.layers.8.attention.v_proj.weight
+ (768, 768)" fillcolor=lightblue]
+	5215465968 -> 5201946768
+	5201946768 [label=AccumulateGrad]
+	5201941920 -> 5201451648
+	5201941920 [label=TBackward0]
+	5201944368 -> 5201941920
+	5215466288 [label="model.wav2vec2.wav2vec2.encoder.layers.8.attention.out_proj.weight
+ (768, 768)" fillcolor=lightblue]
+	5215466288 -> 5201944368
+	5201944368 [label=AccumulateGrad]
+	5201998464 -> 5201994720
+	5215466448 [label="model.wav2vec2.wav2vec2.encoder.layers.8.layer_norm.weight
+ (768)" fillcolor=lightblue]
+	5215466448 -> 5201998464
+	5201998464 [label=AccumulateGrad]
+	5201998656 -> 5201994720
+	5215466528 [label="model.wav2vec2.wav2vec2.encoder.layers.8.layer_norm.bias
+ (768)" fillcolor=lightblue]
+	5215466528 -> 5201998656
+	5201998656 [label=AccumulateGrad]
+	5201998512 -> 5201995968
+	5201998512 [label=ViewBackward0]
+	5201449584 -> 5201998512
+	5201449584 [label=AddmmBackward0]
+	5201997984 -> 5201449584
+	5215466848 [label="model.wav2vec2.wav2vec2.encoder.layers.8.feed_forward.output_dense.bias
+ (768)" fillcolor=lightblue]
+	5215466848 -> 5201997984
+	5201997984 [label=AccumulateGrad]
+	5201944272 -> 5201449584
+	5201944272 [label=ViewBackward0]
+	5201944464 -> 5201944272
+	5201944464 [label=GeluBackward0]
+	5201945088 -> 5201944464
+	5201945088 [label=ViewBackward0]
+	5201945808 -> 5201945088
+	5201945808 [label=AddmmBackward0]
+	5201946720 -> 5201945808
+	5215466688 [label="model.wav2vec2.wav2vec2.encoder.layers.8.feed_forward.intermediate_dense.bias
+ (3072)" fillcolor=lightblue]
+	5215466688 -> 5201946720
+	5201946720 [label=AccumulateGrad]
+	5201946192 -> 5201945808
+	5201946192 [label=ViewBackward0]
+	5201994720 -> 5201946192
+	5201944320 -> 5201945808
+	5201944320 [label=TBackward0]
+	5201946672 -> 5201944320
+	5215466608 [label="model.wav2vec2.wav2vec2.encoder.layers.8.feed_forward.intermediate_dense.weight
+ (3072, 768)" fillcolor=lightblue]
+	5215466608 -> 5201946672
+	5201946672 [label=AccumulateGrad]
+	5201944176 -> 5201449584
+	5201944176 [label=TBackward0]
+	5201945424 -> 5201944176
+	5215466768 [label="model.wav2vec2.wav2vec2.encoder.layers.8.feed_forward.output_dense.weight
+ (768, 3072)" fillcolor=lightblue]
+	5215466768 -> 5201945424
+	5201945424 [label=AccumulateGrad]
+	5201999040 -> 5201994816
+	5215466928 [label="model.wav2vec2.wav2vec2.encoder.layers.8.final_layer_norm.weight
+ (768)" fillcolor=lightblue]
+	5215466928 -> 5201999040
+	5201999040 [label=AccumulateGrad]
+	5201995584 -> 5201994816
+	5215467008 [label="model.wav2vec2.wav2vec2.encoder.layers.8.final_layer_norm.bias
+ (768)" fillcolor=lightblue]
+	5215467008 -> 5201995584
+	5201995584 [label=AccumulateGrad]
+	5201994336 -> 5201998944
+	5201994336 [label=ViewBackward0]
+	5201999952 -> 5201994336
+	5201999952 [label=AddmmBackward0]
+	5201997024 -> 5201999952
+	5215467648 [label="model.wav2vec2.wav2vec2.encoder.layers.9.attention.out_proj.bias
+ (768)" fillcolor=lightblue]
+	5215467648 -> 5201997024
+	5201997024 [label=AccumulateGrad]
+	5201944896 -> 5201999952
+	5201944896 [label=ViewBackward0]
+	5201946528 -> 5201944896
+	5201946528 [label=UnsafeViewBackward0]
+	5201946864 -> 5201946528
+	5201946864 [label=CloneBackward0]
+	5201947056 -> 5201946864
+	5201947056 [label=TransposeBackward0]
+	5201947152 -> 5201947056
+	5201947152 [label=ViewBackward0]
+	5201947248 -> 5201947152
+	5201947248 [label=BmmBackward0]
+	5201947344 -> 5201947248
+	5201947344 [label=SoftmaxBackward0]
+	5201947488 -> 5201947344
+	5201947488 [label=ViewBackward0]
+	5201947584 -> 5201947488
+	5201947584 [label=AddBackward0]
+	5201947680 -> 5201947584
+	5201947680 [label=ViewBackward0]
+	5201947776 -> 5201947680
+	5201947776 [label=BmmBackward0]
+	5201947872 -> 5201947776
+	5201947872 [label=ViewBackward0]
+	5201948016 -> 5201947872
+	5201948016 [label=CloneBackward0]
+	5201948112 -> 5201948016
+	5201948112 [label=TransposeBackward0]
+	5201948208 -> 5201948112
+	5201948208 [label=ViewBackward0]
+	5201948304 -> 5201948208
+	5201948304 [label=MulBackward0]
+	5201948400 -> 5201948304
+	5201948400 [label=ViewBackward0]
+	5201948496 -> 5201948400
+	5201948496 [label=AddmmBackward0]
+	5201948592 -> 5201948496
+	5215467488 [label="model.wav2vec2.wav2vec2.encoder.layers.9.attention.q_proj.bias
+ (768)" fillcolor=lightblue]
+	5215467488 -> 5201948592
+	5201948592 [label=AccumulateGrad]
+	5201948544 -> 5201948496
+	5201948544 [label=ViewBackward0]
+	5201994816 -> 5201948544
+	5201947920 -> 5201948496
+	5201947920 [label=TBackward0]
+	5201948784 -> 5201947920
+	5215467408 [label="model.wav2vec2.wav2vec2.encoder.layers.9.attention.q_proj.weight
+ (768, 768)" fillcolor=lightblue]
+	5215467408 -> 5201948784
+	5201948784 [label=AccumulateGrad]
+	5201947824 -> 5201947776
+	5201947824 [label=TransposeBackward0]
+	5201948160 -> 5201947824
+	5201948160 [label=ReshapeAliasBackward0]
+	5201948352 -> 5201948160
+	5201948352 [label=CloneBackward0]
+	5201948640 -> 5201948352
+	5201948640 [label=TransposeBackward0]
+	5201948880 -> 5201948640
+	5201948880 [label=ViewBackward0]
+	5201948688 -> 5201948880
+	5201948688 [label=ViewBackward0]
+	5201948976 -> 5201948688
+	5201948976 [label=AddmmBackward0]
+	5201949072 -> 5201948976
+	5215467168 [label="model.wav2vec2.wav2vec2.encoder.layers.9.attention.k_proj.bias
+ (768)" fillcolor=lightblue]
+	5215467168 -> 5201949072
+	5201949072 [label=AccumulateGrad]
+	5201949024 -> 5201948976
+	5201949024 [label=ViewBackward0]
+	5201994816 -> 5201949024
+	5201947968 -> 5201948976
+	5201947968 [label=TBackward0]
+	5201949264 -> 5201947968
+	5215467088 [label="model.wav2vec2.wav2vec2.encoder.layers.9.attention.k_proj.weight
+ (768, 768)" fillcolor=lightblue]
+	5215467088 -> 5201949264
+	5201949264 [label=AccumulateGrad]
+	5201947296 -> 5201947248
+	5201947296 [label=ReshapeAliasBackward0]
+	5201947632 -> 5201947296
+	5201947632 [label=CloneBackward0]
+	5201947392 -> 5201947632
+	5201947392 [label=TransposeBackward0]
+	5201948256 -> 5201947392
+	5201948256 [label=ViewBackward0]
+	5201948736 -> 5201948256
+	5201948736 [label=ViewBackward0]
+	5201948928 -> 5201948736
+	5201948928 [label=AddmmBackward0]
+	5201949216 -> 5201948928
+	5215467328 [label="model.wav2vec2.wav2vec2.encoder.layers.9.attention.v_proj.bias
+ (768)" fillcolor=lightblue]
+	5215467328 -> 5201949216
+	5201949216 [label=AccumulateGrad]
+	5201949120 -> 5201948928
+	5201949120 [label=ViewBackward0]
+	5201994816 -> 5201949120
+	5201947440 -> 5201948928
+	5201947440 [label=TBackward0]
+	5201949408 -> 5201947440
+	5215467248 [label="model.wav2vec2.wav2vec2.encoder.layers.9.attention.v_proj.weight
+ (768, 768)" fillcolor=lightblue]
+	5215467248 -> 5201949408
+	5201949408 [label=AccumulateGrad]
+	5201944560 -> 5201999952
+	5201944560 [label=TBackward0]
+	5201947008 -> 5201944560
+	5215467568 [label="model.wav2vec2.wav2vec2.encoder.layers.9.attention.out_proj.weight
+ (768, 768)" fillcolor=lightblue]
+	5215467568 -> 5201947008
+	5201947008 [label=AccumulateGrad]
+	5201998176 -> 5201998800
+	5215467728 [label="model.wav2vec2.wav2vec2.encoder.layers.9.layer_norm.weight
+ (768)" fillcolor=lightblue]
+	5215467728 -> 5201998176
+	5201998176 [label=AccumulateGrad]
+	5201998848 -> 5201998800
+	5215467808 [label="model.wav2vec2.wav2vec2.encoder.layers.9.layer_norm.bias
+ (768)" fillcolor=lightblue]
+	5215467808 -> 5201998848
+	5201998848 [label=AccumulateGrad]
+	5201999520 -> 5201994432
+	5201999520 [label=ViewBackward0]
+	5201994144 -> 5201999520
+	5201994144 [label=AddmmBackward0]
+	5201998224 -> 5201994144
+	5215468128 [label="model.wav2vec2.wav2vec2.encoder.layers.9.feed_forward.output_dense.bias
+ (768)" fillcolor=lightblue]
+	5215468128 -> 5201998224
+	5201998224 [label=AccumulateGrad]
+	5201946912 -> 5201994144
+	5201946912 [label=ViewBackward0]
+	5201947104 -> 5201946912
+	5201947104 [label=GeluBackward0]
+	5201947728 -> 5201947104
+	5201947728 [label=ViewBackward0]
+	5201948448 -> 5201947728
+	5201948448 [label=AddmmBackward0]
+	5201949360 -> 5201948448
+	5215467968 [label="model.wav2vec2.wav2vec2.encoder.layers.9.feed_forward.intermediate_dense.bias
+ (3072)" fillcolor=lightblue]
+	5215467968 -> 5201949360
+	5201949360 [label=AccumulateGrad]
+	5201948832 -> 5201948448
+	5201948832 [label=ViewBackward0]
+	5201998800 -> 5201948832
+	5201946960 -> 5201948448
+	5201946960 [label=TBackward0]
+	5201949312 -> 5201946960
+	5215467888 [label="model.wav2vec2.wav2vec2.encoder.layers.9.feed_forward.intermediate_dense.weight
+ (3072, 768)" fillcolor=lightblue]
+	5215467888 -> 5201949312
+	5201949312 [label=AccumulateGrad]
+	5201946816 -> 5201994144
+	5201946816 [label=TBackward0]
+	5201948064 -> 5201946816
+	5215468048 [label="model.wav2vec2.wav2vec2.encoder.layers.9.feed_forward.output_dense.weight
+ (768, 3072)" fillcolor=lightblue]
+	5215468048 -> 5201948064
+	5201948064 [label=AccumulateGrad]
+	5201993808 -> 5201993760
+	5215468208 [label="model.wav2vec2.wav2vec2.encoder.layers.9.final_layer_norm.weight
+ (768)" fillcolor=lightblue]
+	5215468208 -> 5201993808
+	5201993808 [label=AccumulateGrad]
+	5201993952 -> 5201993760
+	5215468288 [label="model.wav2vec2.wav2vec2.encoder.layers.9.final_layer_norm.bias
+ (768)" fillcolor=lightblue]
+	5215468288 -> 5201993952
+	5201993952 [label=AccumulateGrad]
+	5201993856 -> 5201993472
+	5201993856 [label=ViewBackward0]
+	5201998272 -> 5201993856
+	5201998272 [label=AddmmBackward0]
+	5201994048 -> 5201998272
+	5215468928 [label="model.wav2vec2.wav2vec2.encoder.layers.10.attention.out_proj.bias
+ (768)" fillcolor=lightblue]
+	5215468928 -> 5201994048
+	5201994048 [label=AccumulateGrad]
+	5201947536 -> 5201998272
+	5201947536 [label=ViewBackward0]
+	5201949168 -> 5201947536
+	5201949168 [label=UnsafeViewBackward0]
+	5201949504 -> 5201949168
+	5201949504 [label=CloneBackward0]
+	5201949696 -> 5201949504
+	5201949696 [label=TransposeBackward0]
+	5201949792 -> 5201949696
+	5201949792 [label=ViewBackward0]
+	5201949888 -> 5201949792
+	5201949888 [label=BmmBackward0]
+	5201949984 -> 5201949888
+	5201949984 [label=SoftmaxBackward0]
+	5201950128 -> 5201949984
+	5201950128 [label=ViewBackward0]
+	5201950224 -> 5201950128
+	5201950224 [label=AddBackward0]
+	5201950320 -> 5201950224
+	5201950320 [label=ViewBackward0]
+	5201950416 -> 5201950320
+	5201950416 [label=BmmBackward0]
+	5201950512 -> 5201950416
+	5201950512 [label=ViewBackward0]
+	5201950656 -> 5201950512
+	5201950656 [label=CloneBackward0]
+	5201950752 -> 5201950656
+	5201950752 [label=TransposeBackward0]
+	5201950848 -> 5201950752
+	5201950848 [label=ViewBackward0]
+	5201950944 -> 5201950848
+	5201950944 [label=MulBackward0]
+	5201951040 -> 5201950944
+	5201951040 [label=ViewBackward0]
+	5201951136 -> 5201951040
+	5201951136 [label=AddmmBackward0]
+	5201951232 -> 5201951136
+	5215468768 [label="model.wav2vec2.wav2vec2.encoder.layers.10.attention.q_proj.bias
+ (768)" fillcolor=lightblue]
+	5215468768 -> 5201951232
+	5201951232 [label=AccumulateGrad]
+	5201951184 -> 5201951136
+	5201951184 [label=ViewBackward0]
+	5201993760 -> 5201951184
+	5201950560 -> 5201951136
+	5201950560 [label=TBackward0]
+	5201951424 -> 5201950560
+	5215468688 [label="model.wav2vec2.wav2vec2.encoder.layers.10.attention.q_proj.weight
+ (768, 768)" fillcolor=lightblue]
+	5215468688 -> 5201951424
+	5201951424 [label=AccumulateGrad]
+	5201950464 -> 5201950416
+	5201950464 [label=TransposeBackward0]
+	5201950800 -> 5201950464
+	5201950800 [label=ReshapeAliasBackward0]
+	5201950992 -> 5201950800
+	5201950992 [label=CloneBackward0]
+	5201951280 -> 5201950992
+	5201951280 [label=TransposeBackward0]
+	5201951520 -> 5201951280
+	5201951520 [label=ViewBackward0]
+	5201951328 -> 5201951520
+	5201951328 [label=ViewBackward0]
+	5201951616 -> 5201951328
+	5201951616 [label=AddmmBackward0]
+	5201951712 -> 5201951616
+	5215468448 [label="model.wav2vec2.wav2vec2.encoder.layers.10.attention.k_proj.bias
+ (768)" fillcolor=lightblue]
+	5215468448 -> 5201951712
+	5201951712 [label=AccumulateGrad]
+	5201951664 -> 5201951616
+	5201951664 [label=ViewBackward0]
+	5201993760 -> 5201951664
+	5201950608 -> 5201951616
+	5201950608 [label=TBackward0]
+	5201951904 -> 5201950608
+	5215468368 [label="model.wav2vec2.wav2vec2.encoder.layers.10.attention.k_proj.weight
+ (768, 768)" fillcolor=lightblue]
+	5215468368 -> 5201951904
+	5201951904 [label=AccumulateGrad]
+	5201949936 -> 5201949888
+	5201949936 [label=ReshapeAliasBackward0]
+	5201950272 -> 5201949936
+	5201950272 [label=CloneBackward0]
+	5201950032 -> 5201950272
+	5201950032 [label=TransposeBackward0]
+	5201950896 -> 5201950032
+	5201950896 [label=ViewBackward0]
+	5201951376 -> 5201950896
+	5201951376 [label=ViewBackward0]
+	5201951568 -> 5201951376
+	5201951568 [label=AddmmBackward0]
+	5201951856 -> 5201951568
+	5215468608 [label="model.wav2vec2.wav2vec2.encoder.layers.10.attention.v_proj.bias
+ (768)" fillcolor=lightblue]
+	5215468608 -> 5201951856
+	5201951856 [label=AccumulateGrad]
+	5201951760 -> 5201951568
+	5201951760 [label=ViewBackward0]
+	5201993760 -> 5201951760
+	5201950080 -> 5201951568
+	5201950080 [label=TBackward0]
+	5201952048 -> 5201950080
+	5215468528 [label="model.wav2vec2.wav2vec2.encoder.layers.10.attention.v_proj.weight
+ (768, 768)" fillcolor=lightblue]
+	5215468528 -> 5201952048
+	5201952048 [label=AccumulateGrad]
+	5201947200 -> 5201998272
+	5201947200 [label=TBackward0]
+	5201949648 -> 5201947200
+	5215468848 [label="model.wav2vec2.wav2vec2.encoder.layers.10.attention.out_proj.weight
+ (768, 768)" fillcolor=lightblue]
+	5215468848 -> 5201949648
+	5201949648 [label=AccumulateGrad]
+	5201993568 -> 5201993376
+	5215469008 [label="model.wav2vec2.wav2vec2.encoder.layers.10.layer_norm.weight
+ (768)" fillcolor=lightblue]
+	5215469008 -> 5201993568
+	5201993568 [label=AccumulateGrad]
+	5201993232 -> 5201993376
+	5215469088 [label="model.wav2vec2.wav2vec2.encoder.layers.10.layer_norm.bias
+ (768)" fillcolor=lightblue]
+	5215469088 -> 5201993232
+	5201993232 [label=AccumulateGrad]
+	5201993184 -> 5201993088
+	5201993184 [label=ViewBackward0]
+	5201999328 -> 5201993184
+	5201999328 [label=AddmmBackward0]
+	5201993664 -> 5201999328
+	5215469408 [label="model.wav2vec2.wav2vec2.encoder.layers.10.feed_forward.output_dense.bias
+ (768)" fillcolor=lightblue]
+	5215469408 -> 5201993664
+	5201993664 [label=AccumulateGrad]
+	5201949552 -> 5201999328
+	5201949552 [label=ViewBackward0]
+	5201949744 -> 5201949552
+	5201949744 [label=GeluBackward0]
+	5201950368 -> 5201949744
+	5201950368 [label=ViewBackward0]
+	5201951088 -> 5201950368
+	5201951088 [label=AddmmBackward0]
+	5201952000 -> 5201951088
+	5215469248 [label="model.wav2vec2.wav2vec2.encoder.layers.10.feed_forward.intermediate_dense.bias
+ (3072)" fillcolor=lightblue]
+	5215469248 -> 5201952000
+	5201952000 [label=AccumulateGrad]
+	5201951472 -> 5201951088
+	5201951472 [label=ViewBackward0]
+	5201993376 -> 5201951472
+	5201949600 -> 5201951088
+	5201949600 [label=TBackward0]
+	5201951952 -> 5201949600
+	5215469168 [label="model.wav2vec2.wav2vec2.encoder.layers.10.feed_forward.intermediate_dense.weight
+ (3072, 768)" fillcolor=lightblue]
+	5215469168 -> 5201951952
+	5201951952 [label=AccumulateGrad]
+	5201949456 -> 5201999328
+	5201949456 [label=TBackward0]
+	5201950704 -> 5201949456
+	5215469328 [label="model.wav2vec2.wav2vec2.encoder.layers.10.feed_forward.output_dense.weight
+ (768, 3072)" fillcolor=lightblue]
+	5215469328 -> 5201950704
+	5201950704 [label=AccumulateGrad]
+	5201992896 -> 5201992704
+	5215469488 [label="model.wav2vec2.wav2vec2.encoder.layers.10.final_layer_norm.weight
+ (768)" fillcolor=lightblue]
+	5215469488 -> 5201992896
+	5201992896 [label=AccumulateGrad]
+	5201992992 -> 5201992704
+	5215961152 [label="model.wav2vec2.wav2vec2.encoder.layers.10.final_layer_norm.bias
+ (768)" fillcolor=lightblue]
+	5215961152 -> 5201992992
+	5201992992 [label=AccumulateGrad]
+	5201992800 -> 5201992272
+	5201992800 [label=ViewBackward0]
+	5201993520 -> 5201992800
+	5201993520 [label=AddmmBackward0]
+	5201992944 -> 5201993520
+	5215961792 [label="model.wav2vec2.wav2vec2.encoder.layers.11.attention.out_proj.bias
+ (768)" fillcolor=lightblue]
+	5215961792 -> 5201992944
+	5201992944 [label=AccumulateGrad]
+	5201950176 -> 5201993520
+	5201950176 [label=ViewBackward0]
+	5201951808 -> 5201950176
+	5201951808 [label=UnsafeViewBackward0]
+	5201952144 -> 5201951808
+	5201952144 [label=CloneBackward0]
+	5201952336 -> 5201952144
+	5201952336 [label=TransposeBackward0]
+	5201952432 -> 5201952336
+	5201952432 [label=ViewBackward0]
+	5201952528 -> 5201952432
+	5201952528 [label=BmmBackward0]
+	5201952624 -> 5201952528
+	5201952624 [label=SoftmaxBackward0]
+	5201952720 -> 5201952624
+	5201952720 [label=ViewBackward0]
+	5216190624 -> 5201952720
+	5216190624 [label=AddBackward0]
+	5216190720 -> 5216190624
+	5216190720 [label=ViewBackward0]
+	5216190864 -> 5216190720
+	5216190864 [label=BmmBackward0]
+	5216190960 -> 5216190864
+	5216190960 [label=ViewBackward0]
+	5216191104 -> 5216190960
+	5216191104 [label=CloneBackward0]
+	5216191200 -> 5216191104
+	5216191200 [label=TransposeBackward0]
+	5216191296 -> 5216191200
+	5216191296 [label=ViewBackward0]
+	5216191392 -> 5216191296
+	5216191392 [label=MulBackward0]
+	5216191488 -> 5216191392
+	5216191488 [label=ViewBackward0]
+	5216191584 -> 5216191488
+	5216191584 [label=AddmmBackward0]
+	5216191680 -> 5216191584
+	5215961632 [label="model.wav2vec2.wav2vec2.encoder.layers.11.attention.q_proj.bias
+ (768)" fillcolor=lightblue]
+	5215961632 -> 5216191680
+	5216191680 [label=AccumulateGrad]
+	5216191632 -> 5216191584
+	5216191632 [label=ViewBackward0]
+	5201992704 -> 5216191632
+	5216191008 -> 5216191584
+	5216191008 [label=TBackward0]
+	5216191872 -> 5216191008
+	5215961552 [label="model.wav2vec2.wav2vec2.encoder.layers.11.attention.q_proj.weight
+ (768, 768)" fillcolor=lightblue]
+	5215961552 -> 5216191872
+	5216191872 [label=AccumulateGrad]
+	5216190912 -> 5216190864
+	5216190912 [label=TransposeBackward0]
+	5216191248 -> 5216190912
+	5216191248 [label=ReshapeAliasBackward0]
+	5216191440 -> 5216191248
+	5216191440 [label=CloneBackward0]
+	5216191728 -> 5216191440
+	5216191728 [label=TransposeBackward0]
+	5216191968 -> 5216191728
+	5216191968 [label=ViewBackward0]
+	5216191776 -> 5216191968
+	5216191776 [label=ViewBackward0]
+	5216192064 -> 5216191776
+	5216192064 [label=AddmmBackward0]
+	5216192160 -> 5216192064
+	5215961312 [label="model.wav2vec2.wav2vec2.encoder.layers.11.attention.k_proj.bias
+ (768)" fillcolor=lightblue]
+	5215961312 -> 5216192160
+	5216192160 [label=AccumulateGrad]
+	5216192112 -> 5216192064
+	5216192112 [label=ViewBackward0]
+	5201992704 -> 5216192112
+	5216191056 -> 5216192064
+	5216191056 [label=TBackward0]
+	5216192352 -> 5216191056
+	5215961232 [label="model.wav2vec2.wav2vec2.encoder.layers.11.attention.k_proj.weight
+ (768, 768)" fillcolor=lightblue]
+	5215961232 -> 5216192352
+	5216192352 [label=AccumulateGrad]
+	5201952576 -> 5201952528
+	5201952576 [label=ReshapeAliasBackward0]
+	5201952672 -> 5201952576
+	5201952672 [label=CloneBackward0]
+	5216190768 -> 5201952672
+	5216190768 [label=TransposeBackward0]
+	5216191344 -> 5216190768
+	5216191344 [label=ViewBackward0]
+	5216191824 -> 5216191344
+	5216191824 [label=ViewBackward0]
+	5216192016 -> 5216191824
+	5216192016 [label=AddmmBackward0]
+	5216192304 -> 5216192016
+	5215961472 [label="model.wav2vec2.wav2vec2.encoder.layers.11.attention.v_proj.bias
+ (768)" fillcolor=lightblue]
+	5215961472 -> 5216192304
+	5216192304 [label=AccumulateGrad]
+	5216192208 -> 5216192016
+	5216192208 [label=ViewBackward0]
+	5201992704 -> 5216192208
+	5216190576 -> 5216192016
+	5216190576 [label=TBackward0]
+	5216192496 -> 5216190576
+	5215961392 [label="model.wav2vec2.wav2vec2.encoder.layers.11.attention.v_proj.weight
+ (768, 768)" fillcolor=lightblue]
+	5215961392 -> 5216192496
+	5216192496 [label=AccumulateGrad]
+	5201949840 -> 5201993520
+	5201949840 [label=TBackward0]
+	5201952288 -> 5201949840
+	5215961712 [label="model.wav2vec2.wav2vec2.encoder.layers.11.attention.out_proj.weight
+ (768, 768)" fillcolor=lightblue]
+	5215961712 -> 5201952288
+	5201952288 [label=AccumulateGrad]
+	5201992416 -> 5201992320
+	5215961872 [label="model.wav2vec2.wav2vec2.encoder.layers.11.layer_norm.weight
+ (768)" fillcolor=lightblue]
+	5215961872 -> 5201992416
+	5201992416 [label=AccumulateGrad]
+	5201992224 -> 5201992320
+	5215961952 [label="model.wav2vec2.wav2vec2.encoder.layers.11.layer_norm.bias
+ (768)" fillcolor=lightblue]
+	5215961952 -> 5201992224
+	5201992224 [label=AccumulateGrad]
+	5201991984 -> 5201992032
+	5201991984 [label=ViewBackward0]
+	5201993280 -> 5201991984
+	5201993280 [label=AddmmBackward0]
+	5201992608 -> 5201993280
+	5215962272 [label="model.wav2vec2.wav2vec2.encoder.layers.11.feed_forward.output_dense.bias
+ (768)" fillcolor=lightblue]
+	5215962272 -> 5201992608
+	5201992608 [label=AccumulateGrad]
+	5201952192 -> 5201993280
+	5201952192 [label=ViewBackward0]
+	5201952384 -> 5201952192
+	5201952384 [label=GeluBackward0]
+	5201952240 -> 5201952384
+	5201952240 [label=ViewBackward0]
+	5216191536 -> 5201952240
+	5216191536 [label=AddmmBackward0]
+	5216192448 -> 5216191536
+	5215962112 [label="model.wav2vec2.wav2vec2.encoder.layers.11.feed_forward.intermediate_dense.bias
+ (3072)" fillcolor=lightblue]
+	5215962112 -> 5216192448
+	5216192448 [label=AccumulateGrad]
+	5216191920 -> 5216191536
+	5216191920 [label=ViewBackward0]
+	5201992320 -> 5216191920
+	5216190672 -> 5216191536
+	5216190672 [label=TBackward0]
+	5216192400 -> 5216190672
+	5215962032 [label="model.wav2vec2.wav2vec2.encoder.layers.11.feed_forward.intermediate_dense.weight
+ (3072, 768)" fillcolor=lightblue]
+	5215962032 -> 5216192400
+	5216192400 [label=AccumulateGrad]
+	5201952096 -> 5201993280
+	5201952096 [label=TBackward0]
+	5201936496 -> 5201952096
+	5215962192 [label="model.wav2vec2.wav2vec2.encoder.layers.11.feed_forward.output_dense.weight
+ (768, 3072)" fillcolor=lightblue]
+	5215962192 -> 5201936496
+	5201936496 [label=AccumulateGrad]
+	5201991744 -> 5201991840
+	5215962352 [label="model.wav2vec2.wav2vec2.encoder.layers.11.final_layer_norm.weight
+ (768)" fillcolor=lightblue]
+	5215962352 -> 5201991744
+	5201991744 [label=AccumulateGrad]
+	5201990784 -> 5201991840
+	5215962432 [label="model.wav2vec2.wav2vec2.encoder.layers.11.final_layer_norm.bias
+ (768)" fillcolor=lightblue]
+	5215962432 -> 5201990784
+	5201990784 [label=AccumulateGrad]
+	5201990880 -> 5201990304
+	5201990880 [label=TBackward0]
+	5201991024 -> 5201990880
+	5215293408 [label="model.linear_head.1.weight
+ (4, 768)" fillcolor=lightblue]
+	5215293408 -> 5201991024
+	5201991024 [label=AccumulateGrad]
+	5201990304 -> 5215292768
+}

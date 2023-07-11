@@ -1,0 +1,16 @@
+torch
+torchaudio
+scikit-learn
+transformers
+lightning==2.0.1
+pydantic
+matplotlib
+seaborn
+soundfile
+dotmap
+torchviz
+librosa
+onnx
+tqdm
+jupyterlab
+git+https://github.com/beltrewilton/VAD.git
