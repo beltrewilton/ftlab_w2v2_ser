@@ -7,7 +7,7 @@ from lightning.pytorch import Trainer
 from train.main_impl import MainImplementation
 
 # change also line: 50
-ds_name = "ravdess"  #   <-- [Wilton] ravdess | escorpus_pe | mess
+ds_name = "escorpus_pe"  #   <-- [Wilton] ravdess | escorpus_pe | mess
 
 ### Hyperparameters
 hparams = DotMap()
@@ -22,8 +22,8 @@ hparams.saving_path = 'downstream/checkpoints/custom'
 hparams.audiopath = f"rawdata/{ds_name}_16k"
 hparams.labeldir = f"rawdata/labels_{ds_name}"
 # /Users/beltre.wilton/apps/ftlab_w2v2_ser/pretrained_path/wav2vec2-base
-# /Users/beltre.wilton/apps/ftlab_w2v2_ser/pretrained_path/wav2vec2-base-es-voxpopuli-v2
-hparams.pretrained_path = "/Users/beltre.wilton/apps/ftlab_w2v2_ser/pretrained_path/wav2vec2-base"
+hparams.pretrained_path = "/Users/beltre.wilton/apps/ftlab_w2v2_ser/pretrained_path/wav2vec2-base-es-voxpopuli-v2"
+# hparams.pretrained_path = "/Users/beltre.wilton/apps/ftlab_w2v2_ser/pretrained_path/wav2vec2-base"
 # hparams.pretrained_path = None  --> to download auto the default model from huggingface/facebook
 hparams.model_type = 'wav2vec2'
 hparams.save_top_k = 1
@@ -34,7 +34,7 @@ if not os.path.exists(hparams.saving_path):
     os.makedirs(hparams.saving_path)
 
 # We can split the file folds
-jsonfile = [ f for f in os.listdir(hparams.labeldir) if "json" in f]
+jsonfile = [f for f in os.listdir(hparams.labeldir) if "json" in f]
 nfolds = len(jsonfile)
 
 metrics, confusion = np.zeros((4, hparams.num_exps, nfolds)), 0.
@@ -47,7 +47,7 @@ for ifold, foldlabel in enumerate(jsonfile):
 
     checkpoint_callback = ModelCheckpoint(
         dirpath=hparams.saving_path,
-        filename='ravdess-{epoch:02d}-{valid_loss:.3f}-{valid_UAR:.5f}' if hasattr(model, 'valid_met') else None,
+        filename='escorpus_pe-{epoch:02d}-{valid_loss:.3f}-{valid_UAR:.5f}' if hasattr(model, 'valid_met') else None,
         save_top_k=hparams.save_top_k if hasattr(model, 'valid_met') else 0,
         verbose=True,
         save_weights_only=True,
@@ -65,9 +65,9 @@ for ifold, foldlabel in enumerate(jsonfile):
         max_epochs=hparams.max_epochs,
         num_sanity_val_steps=2 if hasattr(model, 'valid_met') else 0,
         # gpus=1, # problems on macOS
-        logger=True,
+        logger=False,
         accelerator="auto", # auto to mps on macOS or gpu on linux
-        log_every_n_steps=5,
+        # log_every_n_steps=5,
         # gradient_checkpointing=False,
     )
     # trainer.checkpoint_callback = hasattr(model, 'valid_met')
