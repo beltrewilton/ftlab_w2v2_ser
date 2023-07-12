@@ -6,8 +6,9 @@ from lightning.pytorch.callbacks import ModelCheckpoint
 from lightning.pytorch import Trainer
 from train.main_impl import MainImplementation
 
-# change also line: 50
-ds_name = "escorpus_pe"  #   <-- [Wilton] ravdess | escorpus_pe | mess
+# change also line: 51
+ds_name = "ravdess"  #   <-- [Wilton] ravdess | escorpus_pe | mess
+root = os.getcwd()
 
 ### Hyperparameters
 hparams = DotMap()
@@ -21,9 +22,9 @@ hparams.precision = 32
 hparams.saving_path = 'downstream/checkpoints/custom'
 hparams.audiopath = f"rawdata/{ds_name}_16k"
 hparams.labeldir = f"rawdata/labels_{ds_name}"
-# /Users/beltre.wilton/apps/ftlab_w2v2_ser/pretrained_path/wav2vec2-base
-hparams.pretrained_path = "/Users/beltre.wilton/apps/ftlab_w2v2_ser/pretrained_path/wav2vec2-base-es-voxpopuli-v2"
-# hparams.pretrained_path = "/Users/beltre.wilton/apps/ftlab_w2v2_ser/pretrained_path/wav2vec2-base"
+# f"{root}/pretrained_path/wav2vec2-base"
+# hparams.pretrained_path = f"{root}/pretrained_path/wav2vec2-base-es-voxpopuli-v2"
+hparams.pretrained_path = f"{root}/pretrained_path/wav2vec2-base"
 # hparams.pretrained_path = None  --> to download auto the default model from huggingface/facebook
 hparams.model_type = 'wav2vec2'
 hparams.save_top_k = 1
@@ -47,7 +48,7 @@ for ifold, foldlabel in enumerate(jsonfile):
 
     checkpoint_callback = ModelCheckpoint(
         dirpath=hparams.saving_path,
-        filename='escorpus_pe-{epoch:02d}-{valid_loss:.3f}-{valid_UAR:.5f}' if hasattr(model, 'valid_met') else None,
+        filename='ravdess-{epoch:02d}-{valid_loss:.3f}-{valid_UAR:.5f}' if hasattr(model, 'valid_met') else None,
         save_top_k=hparams.save_top_k if hasattr(model, 'valid_met') else 0,
         verbose=True,
         save_weights_only=True,

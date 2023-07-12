@@ -9,10 +9,13 @@ from sklearn.model_selection import train_test_split
 import soundfile as sf
 from tqdm import tqdm
 
+module_directory = Path(__file__).parent.parent
+os.chdir(module_directory)
+root = os.getcwd()
 
 MESS_PATH = Path("/Users/beltre.wilton/Downloads/SER-Datasets/MESS-compressed")
-TARGET = "/Users/beltre.wilton/apps/ftlab_w2v2_ser/rawdata/mess_16k"
-LABELS = "/Users/beltre.wilton/apps/ftlab_w2v2_ser/rawdata/labels_mess"
+TARGET = f"{root}/rawdata/mess_16k"
+LABELS = f"{root}/rawdata/labels_mess"
 CSV_FILE = "mess.csv"
 
 

@@ -1,3 +1,4 @@
+import os
 import torch
 import numpy as np
 import time
@@ -7,6 +8,8 @@ from torchviz import make_dot
 from train.rnn_head import RNNHead
 from train.custom_dataset import CustomDataset
 from train.main_impl import MainImplementation
+
+root = os.getcwd()
 
 ### Hyperparameters
 hparams = DotMap()

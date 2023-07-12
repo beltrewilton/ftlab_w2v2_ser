@@ -12,9 +12,13 @@ from vad.vad_lab import VAD
 
 vad = VAD(mapping="Ekman")
 
+module_directory = Path(__file__).parent.parent
+os.chdir(module_directory)
+root = os.getcwd()
+
 RAVDESS_PATH = Path("/Users/beltre.wilton/Downloads/SER-Datasets/RAVDESS")
-AUDIO_TARGET = "/Users/beltre.wilton/apps/ftlab_w2v2_ser/rawdata/ravdess_16k"
-LABELS = "/Users/beltre.wilton/apps/ftlab_w2v2_ser/rawdata/labels_ravdess"
+AUDIO_TARGET = f"{root}/rawdata/ravdess_16k"
+LABELS = f"{root}/rawdata/labels_ravdess"
 CSV_FILE = "ravdess.csv"
 
 if not os.path.exists(AUDIO_TARGET):

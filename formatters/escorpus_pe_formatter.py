@@ -12,9 +12,13 @@ from vad.vad_lab import VAD
 
 vad = VAD(mapping="Ekman")
 
+module_directory = Path(__file__).parent.parent
+os.chdir(module_directory)
+root = os.getcwd()
+
 ESCORPUS_PATH = Path("/Users/beltre.wilton/Downloads/SER-Datasets/Corpus_Globalv1")
-AUDIO_TARGET = "/Users/beltre.wilton/apps/ftlab_w2v2_ser/rawdata/escorpus_pe_16k"
-LABELS = "/Users/beltre.wilton/apps/ftlab_w2v2_ser/rawdata/labels_escorpus_pe"
+AUDIO_TARGET = f"{root}/rawdata/escorpus_pe_16k"
+LABELS = f"{root}/rawdata/labels_escorpus_pe"
 CSV_FILE = "escorpus_pe.csv"
 
 
