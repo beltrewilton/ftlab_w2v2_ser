@@ -22,16 +22,16 @@ def WriteConfusionSeaborn(m, labels, outpath):
     print(f"Saved figure to {outpath}.")
     plt.close(fig)
 
-
-m = np.array(
-[[113.,1.,7.,1.,1.,0.,0.,6.]
-,[0.,85.,0.,0.,0.,15.,1.,0.]
-,[2.,0.,90.,0.,1.,0.,3.,0.]
-,[2.,2.,0.,85.,2.,1.,16.,3.]
-,[2.,0.,0.,2.,90.,5.,3.,7.]
-,[0.,4.,0.,0.,1.,51.,3.,0.]
-,[1.,19.,2.,2.,7.,9.,82.,1.]
-,[0.,0.,2.,4.,6.,0.,0.,124.]]
-)
-
-WriteConfusionSeaborn(m, ['neutral', 'calm', 'happy', 'sad', 'angry', 'fearful', 'disgust', 'surprised'], "porqueria.png")
+#
+# m = np.array(
+# [[113.,1.,7.,1.,1.,0.,0.,6.]
+# ,[0.,85.,0.,0.,0.,15.,1.,0.]
+# ,[2.,0.,90.,0.,1.,0.,3.,0.]
+# ,[2.,2.,0.,85.,2.,1.,16.,3.]
+# ,[2.,0.,0.,2.,90.,5.,3.,7.]
+# ,[0.,4.,0.,0.,1.,51.,3.,0.]
+# ,[1.,19.,2.,2.,7.,9.,82.,1.]
+# ,[0.,0.,2.,4.,6.,0.,0.,124.]]
+# )
+#
+# WriteConfusionSeaborn(m, ['neutral', 'calm', 'happy', 'sad', 'angry', 'fearful', 'disgust', 'surprised'], "porqueria.png")
