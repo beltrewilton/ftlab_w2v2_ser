@@ -10,6 +10,7 @@ soundfile
 dotmap
 torchviz
 librosa
+pydub
 onnx
 tqdm
 jupyterlab

@@ -8,13 +8,14 @@ class RNNHead(pl.LightningModule):
     def __init__(self, n_classes, wav2vecpath=None):
         super().__init__()
         self.backend = "wav2vec2"
-        self.wav2vec2 = Wav2vec2Wrapper(pretrain=False, wav2vecpath=wav2vecpath)
+        self.wav2vec2 = Wav2vec2Wrapper(pretrain=True, wav2vecpath=wav2vecpath)
+        # self.wav2vec2 = Wav2vec2Wrapper(pretrain=False, wav2vecpath=wav2vecpath)
         feature_dim = 768 # base 768,  large 1024
 
         """
         In this paper, we explore methods for fine-tuning wav2vec
         2.0 on SER. We show that by adding a simple neural network 
-        self.rnn_head on top of wav2vec 2.0, vanilla fine-tuning (V-FT) 
+        self.linear_head on top of wav2vec 2.0, vanilla fine-tuning (V-FT) 
         outperforms state-of-the-art (SOTA)
         """
         self.rnn_head = nn.LSTM(feature_dim, 256, 1, bidirectional=True)
@@ -36,4 +37,5 @@ class RNNHead(pl.LightningModule):
         logits = (logits * masks.T.unsqueeze(-1)).sum(0) / last_feat_pos.unsqueeze(1)
         hidden_reps = logits ## [Wilton]
         logits = self.linear_head(logits)
+        # return logits, hidden_reps
         return logits

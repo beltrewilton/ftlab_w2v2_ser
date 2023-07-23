@@ -9,6 +9,8 @@ from sklearn.model_selection import train_test_split
 import soundfile as sf
 from tqdm import tqdm
 from vad.vad_lab import VAD
+from futil import resample
+
 
 vad = VAD(mapping="Ekman")
 
@@ -34,14 +36,15 @@ def convert_16k(source: Path, target: str, hz: int = 16000):
     print("Aqui vamos con RAVDESS.")
     for f in tqdm(source_list):
         data, sr = sf.read(f.__str__())
-        data_16k = librosa.resample(data, orig_sr=sr, target_sr=hz)
+        # data_16k = librosa.resample(data, orig_sr=sr, target_sr=hz)
+        # if f.name == "03-01-03-01-02-01-20.wav":
+        #     print()
+        data_16k = resample(data, orig_sr=sr, target_sr=hz)
         newaudio = os.path.join(target, f.name)
         sf.write(newaudio, data_16k, hz)
-        # valence, arousal, dominance
-        v, a, d = int(f.name[12:14]), int(f.name[15:17]), int(f.name[18:20])
-        cat = vad.vad2categorical(v, a, d, k=1)
-        cat = cat[0][0]['term']
-        ravdess.append([os.path.join(target, f.name), cat, data.shape[0] / sr])
+        cats = ['neutral', 'calm', 'happy', 'sad', 'angry', 'fearful', 'disgust', 'surprised']
+        catidx = int(f.name[6:8]) - 1
+        ravdess.append([os.path.join(target, f.name), cats[catidx], data.shape[0] / sr])
     return np.array(ravdess)
 
 

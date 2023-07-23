@@ -47,7 +47,7 @@ class CustomDataset:
 
 
 class DatasetImpl(Dataset):
-    def __init__(self, audiopath, label, emoset, split, maxseqlen=10):
+    def __init__(self, audiopath, label, emoset, split, maxseqlen=10): #[Wilton ] fix to 10 instead 12
         super().__init__()
         self.maxseqlen = maxseqlen * 16000  # [Wilton] <----  TWO TIMES??? Assume sample rate of 16000 #
         self.split = split

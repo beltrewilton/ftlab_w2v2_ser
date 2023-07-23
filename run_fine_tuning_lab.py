@@ -5,8 +5,9 @@ import time
 from lightning.pytorch.callbacks import ModelCheckpoint
 from lightning.pytorch import Trainer
 from train.main_impl import MainImplementation
+from train.utils.outputlib import WriteConfusionSeaborn
 
-# change also line: 51
+# change also line: 53
 ds_name = "ravdess"  #   <-- [Wilton] ravdess | escorpus_pe | mess
 root = os.getcwd()
 
@@ -14,12 +15,13 @@ root = os.getcwd()
 hparams = DotMap()
 hparams.batch_size = 64 # 64
 hparams.lr = 1e-4
-hparams.max_epochs = 10 # 15
+hparams.max_epochs = 15 # 15
 hparams.maxseqlen = 10
 hparams.nworkers = 1 # it was 4
 hparams.precision = 32
 # hparams.precision = 16
 hparams.saving_path = 'downstream/checkpoints/custom'
+# hparams.audiopath = f"rawdata/gridspace_16k/preprocess"
 hparams.audiopath = f"rawdata/{ds_name}_16k"
 hparams.labeldir = f"rawdata/labels_{ds_name}"
 # f"{root}/pretrained_path/wav2vec2-base"
@@ -48,7 +50,7 @@ for ifold, foldlabel in enumerate(jsonfile):
 
     checkpoint_callback = ModelCheckpoint(
         dirpath=hparams.saving_path,
-        filename='ravdess-{epoch:02d}-{valid_loss:.3f}-{valid_UAR:.5f}' if hasattr(model, 'valid_met') else None,
+        filename='ravdess-task-{epoch:02d}-{valid_loss:.3f}-{valid_UAR:.5f}' if hasattr(model, 'valid_met') else None,
         save_top_k=hparams.save_top_k if hasattr(model, 'valid_met') else 0,
         verbose=True,
         save_weights_only=True,
@@ -96,5 +98,16 @@ for nm, metric in zip(('UAR [%]', 'WAR [%]', 'macroF1 [%]', 'microF1 [%]'), metr
 
 
 print(outputstr)
+outfile = os.path.join(hparams.saving_path, f'{ds_name}-{time.time_ns()}-metrics.txt')
+with open(outfile, "w") as fo:
+    fo.write(outputstr)
+    print(f'Saved metrics detail to {outfile}\n')
+
+#This may cause trouble if emotion categories are not consistent across folds?
+WriteConfusionSeaborn(
+    confusion,
+    model.dataset.emoset,
+    os.path.join(hparams.saving_path, f'{ds_name}-confmat-{time.time_ns()}.png')
+)
 
 print('\n\n************************* END *************************\n\n')

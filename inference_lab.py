@@ -11,6 +11,8 @@ from train.main_impl import MainImplementation
 
 root = os.getcwd()
 
+ds_name = "ravdess"  #   <-- [Wilton] ravdess | escorpus_pe | mess
+
 ### Hyperparameters
 hparams = DotMap()
 hparams.batch_size = 64
@@ -20,8 +22,8 @@ hparams.maxseqlen = 10 # check the avg of the all audios.
 hparams.nworkers = 1 # it was 4
 hparams.precision = 32
 hparams.saving_path = 'downstream/checkpoints/custom'
-hparams.audiopath = "rawdata/escorpus_pe_16k"
-hparams.labelpath = "rawdata/labels_escorpus_pe/escorpus_pe.json"
+hparams.audiopath = f"rawdata/{ds_name}_16k"
+hparams.labelpath = f"rawdata/labels_{ds_name}/{ds_name}_fold3.json"
 hparams.pretrained_path = None
 hparams.model_type = 'wav2vec2'
 hparams.save_top_k = 1
@@ -35,15 +37,13 @@ dataset = CustomDataset(hparams.audiopath, hparams.labelpath, maxseqlen=hparams.
 # (3.068125 * 60) / 153  = 1.2031862745098039
 # (2.9464375 * 60) / 147 = 1.202627551020408
 
-
-# chkpt = "./downstream/checkpoints/custom/epoch=01-valid_loss=0.506-valid_UAR=0.86464.ckpt"
-# chkpt = "./downstream/checkpoints/custom/ravdess-epoch=06-valid_loss=0.284-valid_UAR=0.91667.ckpt"
-chkpt = "./downstream/checkpoints/custom/escorpus_pe-epoch=07-valid_loss=0.918-valid_UAR=0.66108.ckpt"
+chkpt_name = "ravdess-task-epoch=07-valid_loss=0.464-valid_UAR=0.88216"
+chkpt = f"./downstream/checkpoints/custom/{chkpt_name}.ckpt"
 model = MainImplementation.load_from_checkpoint(chkpt, hparams=hparams, inference=True)
 
 samples=10
 
-print(f"\n ========= Runnning {samples} random inference samples ========= \n")
+print(f"\n ========= Runnning {samples} on {ds_name} random inference samples ========= \n")
 for i in range(samples):
     audio, label, label_str, wav_name, duration = dataset.test_dataset.get_sample()
     # obj = dataset.seqCollate([audio])

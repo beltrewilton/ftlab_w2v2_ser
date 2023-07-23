@@ -19,13 +19,15 @@ class Wav2vec2Wrapper(nn.Module):
         self.wav2vec2.encoder.config.gradient_checkpointing = False
         self.pretrain = pretrain
         if pretrain:
-            self.mask_time_length = 15
+            self.mask_time_length = 10 # [Wilton] was 15
             self.mask_time_prob = 0.06 #Probability of each time step is masked!
             self.observe_time_prob = 0.0 #Percentage of tokens that are perserved
             self.mask_feature_prob = 0
+
+            self.mask_feature_length = 64
         else:
             #SpecAug
-            self.mask_time_length = 15
+            self.mask_time_length = 10 # [Wilton] was 15
             self.mask_time_prob = 0.08
             self.observe_time_prob = 0.0
 
@@ -50,6 +52,8 @@ class Wav2vec2Wrapper(nn.Module):
         return ret
 
     def forward(self, x, length=None):
+        # [Wilton] it adapted from:
+        # https://github.com/huggingface/transformers/blob/v4.30.0/src/transformers/models/wav2vec2/modeling_wav2vec2.py#L1510
         with torch.no_grad(): ## [Wilton] partial Fine-tuning
             x = self.wav2vec2.feature_extractor(x)
             x = x.transpose(1, 2) #New version of huggingface
@@ -61,7 +65,16 @@ class Wav2vec2Wrapper(nn.Module):
             if self.pretrain or self.training:
                 batch_size, sequence_length, hidden_size = x.size()
 
-                # apply SpecAugment along time axis
+                # [Wilton] from paper:
+                # Wav2vec 2.0 differs from its NLP
+                # counterparts [7] in that there is no utterance-level pretraining
+                # task to naturally form a sentence representation. As a consequence, aggregation across time steps is required to fine-tune
+                # on utterance level classification tasks.
+                #
+                # In addition, a modified version of SpecAugment [22] proposed in
+                # wav2vec 2.0 is applied during training for better generalization
+                #
+                # apply SpecAugment along time axis VS. original: along feature axis [Wilton]
                 if self.mask_time_prob > 0:
                     mask_time_indices = _compute_mask_indices(
                         (batch_size, sequence_length),
@@ -71,9 +84,9 @@ class Wav2vec2Wrapper(nn.Module):
                         # device=x.device
                     )
 
-                    mask_time_indices = torch.from_numpy(mask_time_indices).to(x.device)
+                    mask_time_indices = torch.from_numpy(mask_time_indices).to(x.device) # [Wilton] fix to new torch and numpy versions.
                     masked_indicies = mask_time_indices & mask
-                    flip_mask = torch.rand((batch_size, sequence_length), device=masked_indicies.device) > self.observe_time_prob
+                    flip_mask = torch.rand((batch_size, sequence_length), device=x.device) > self.observe_time_prob
                     x[masked_indicies & flip_mask] = self.wav2vec2.masked_spec_embed.to(x.dtype)
 
                 # apply SpecAugment along feature axis
@@ -89,8 +102,8 @@ class Wav2vec2Wrapper(nn.Module):
                     x[mask_feature_indices[:, None].expand(-1, sequence_length, -1)] = 0
         x = self.wav2vec2.encoder(x, attention_mask=mask)[0]
         reps = F.relu(x)
-        if self.pretrain:
-            return reps, masked_indicies
+        # if self.pretrain:
+        #     return reps, masked_indicies
         return reps
 
     #From huggingface

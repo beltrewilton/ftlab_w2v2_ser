@@ -37,6 +37,8 @@ class MainImplementation(pl.LightningModule):
             self.test_met = ConfusionMetrics(self.dataset.nemos)
 
     def forward(self, x, length):
+        # length: 64 audios, each with the length
+        # x.shape = 64 x max of length
         return self.model(x, length)
 
     def configure_optimizers(self):
